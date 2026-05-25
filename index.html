@@ -1,5 +1,1481 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head><meta charset="UTF-8"><title>anymetric — RU</title></head>
-<body><h1>Русская версия скоро</h1></body>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- — Favicons — -->
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#0d1323">
+<title>anymetric — лаборатория ИИ-продуктов и выручки</title>
+<meta name="description" content="ИИ-продукты с гарантированным результатом. Находим узкие места по выручке и устраняем их быстро — голосовые и чат-агенты, агентная автоматизация, AEO/GEO, аналитика, рабочие процессы команды.">
+
+<!-- ── Open Graph ── -->
+<meta property="og:type"        content="website">
+<meta property="og:url"         content="https://anymetric.ai/ru/">
+<meta property="og:title"       content="anymetric — лаборатория ИИ-продуктов и выручки">
+<meta property="og:description" content="ИИ-продукты с гарантированным результатом. Находим узкие места по выручке и устраняем их быстро — голосовые и чат-агенты, агентная автоматизация, AEO/GEO, аналитика, рабочие процессы команды.">
+<meta property="og:image"       content="https://anymetric.ai/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale"      content="ru_RU">
+<meta property="og:locale:alternate" content="en_GB">
+<meta property="og:locale:alternate" content="de_DE">
+<meta property="og:site_name"   content="anymetric">
+
+<!-- ── Twitter / X Card ── -->
+<meta name="twitter:card"        content="summary_large_image">
+<meta name="twitter:title"       content="anymetric — лаборатория ИИ-продуктов и выручки">
+<meta name="twitter:description" content="ИИ-продукты с гарантированным результатом. Находим узкие места по выручке и устраняем их быстро — голосовые и чат-агенты, агентная автоматизация, AEO/GEO, аналитика, рабочие процессы команды.">
+<meta name="twitter:image"       content="https://anymetric.ai/og-image.png">
+
+<!-- ── Canonical ── -->
+<link rel="canonical" href="https://anymetric.ai/ru/">
+<link rel="alternate" hreflang="en" href="https://anymetric.ai/">
+<link rel="alternate" hreflang="de" href="https://anymetric.ai/de/">
+<link rel="alternate" hreflang="ru" href="https://anymetric.ai/ru/">
+<link rel="alternate" hreflang="x-default" href="https://anymetric.ai/">
+
+<!-- ── Plausible Analytics (privacy-first, GDPR-compliant, no cookies) ── -->
+<script defer data-domain="anymetric.ai" src="https://plausible.io/js/script.tagged-events.js"></script>
+
+<!-- ── Microsoft Clarity (heatmaps, session recordings) ── -->
+<!-- TODO: replace wnuy5iu5x3 after creating account at clarity.microsoft.com -->
+<script type="text/javascript">
+  (function(c,l,a,r,i,t,y){
+    c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+    t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+    y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+  })(window, document, "clarity", "script", "wnuy5iu5x3");
+</script>
+
+<!-- ── JSON-LD: Organization ── -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "anymetric",
+  "url": "https://anymetric.ai",
+  "email": "lab@anymetric.ai",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Novi Sad",
+    "addressCountry": "RS"
+  },
+  "areaServed": ["DE", "RU", "GB", "US", "EU"],
+  "priceRange": "€€€",
+  "description": "AI product revenue consultancy specialising in GEO/AEO optimisation, on-premise AI systems, agentic automation, and AI product builds."
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "anymetric",
+  "url": "https://anymetric.ai",
+  "description": "AI product revenue consultancy. We move metrics and guarantee the result.",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": {
+      "@type": "EntryPoint",
+      "urlTemplate": "https://anymetric.ai/?s={search_term_string}"
+    },
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "anymetric",
+  "url": "https://anymetric.ai",
+  "logo": "https://anymetric.ai/logo.svg",
+  "description": "ИИ-продукты с гарантированным результатом. Находим узкие места по выручке и устраняем их быстро — голосовые и чат-агенты, агентная автоматизация, AEO/GEO, аналитика, рабочие процессы команды.",
+  "address": {
+    "@type": "PostalAddress",
+    "addressRegion": "Vojvodina",
+    "addressCountry": "RS"
+  },
+  "sameAs": []
+}
+</script>
+
+<!-- ── JSON-LD: FAQ (GEO/AEO signal — matches FAQ section exactly) ── -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "inLanguage": "ru",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Что такое GEO-оптимизация и как она влияет на выручку?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "GEO (Generative Engine Optimization) выстраивает контент и сигналы авторитетности вашего бренда так, чтобы ИИ-движки — ChatGPT, Perplexity, Gemini — цитировали вас в своих ответах. Посетители, пришедшие из LLM, конвертируются примерно в 2× выше стандартного органического трафика — это делает GEO-аудиторию самым конверсионным входящим источником, доступным в 2026 году."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Что такое Minimum Lovable Product и чем он отличается от MVP?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Minimum Viable Product — это минимальный продукт, который технически работает. Minimum Lovable Product — это минимальный продукт, к которому люди реально возвращаются: та же задача, та же скорость, но с достаточным качеством исполнения, чтобы пользователи открывали его повторно по своей воле. ИИ-продукты дают накопительный ROI только тогда, когда люди действительно вовлекаются после первой сессии."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Можете ли вы развернуть ИИ на наших серверах без внешнего облака?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Да — on-premise развёртывание входит в наш набор базовых услуг. Мы полностью разрабатываем и разворачиваем решение на вашей инфраструктуре с локальным деплоем моделей, self-hosted оркестрацией и контейнеризированной архитектурой. Ваши данные не покидают ваш контур. Подходит для регулируемых отраслей, корпоративных контрактов и брендов, для которых приватность — приоритет."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Как работает ваша гарантия результата?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "До начала работы мы согласовываем конкретную измеримую цель по метрике. Если мы не достигаем её в оговорённые сроки — продолжаем работу бесплатно, пока не достигнем, либо возвращаем деньги. Никаких звёздочек и исключений. Гарантия привязана к согласованной метрике, а не к объёму работ или поставке."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Что входит в бесплатный аудит и сколько он занимает?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Опишите вашу задачу через форму — в течение 48 часов senior AI PM присылает персональный разбор: топ-3 возможности по выручке, кратчайший путь к первому результату и предварительную оценку объёма работ. Передаём асинхронно — если захотите обсудить, мы на связи."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Работаете ли вы с агентствами как white-label партнёр?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Да. Для агентств мы работаем как полностью невидимый AI R&D-партнёр. Каждая поставка идёт под вашим брендом, ваши клиенты не видят наше имя, мы подстраиваемся под ваши стандарты коммуникации и поставки. SLA-first, полная конфиденциальность, все права на интеллектуальную собственность переходят к вам по завершении."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Как устроена ваша модель ценообразования?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Стоимость рассчитывается по проекту или ретейнеру. Мы позиционируемся на уровне senior-экспертизы по ценам рынка ЦВЕ — заметно ниже западноевропейских агентств при сопоставимом качестве выхода. Бесплатный аудит даёт чёткое понимание объёма до любых финансовых обязательств."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Сколько обычно длится проект?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Аудит и бэклог — 1 неделя. Первая развёрнутая автоматизация или GEO-оптимизация — 2–4 недели. Полноценный ИИ-продукт (MLP) — 4–8 недель в зависимости от объёма. On-premise развёртывание добавляет 1–2 недели на настройку инфраструктуры. Все сроки согласовываются до начала работы."
+      }
+    }
+  ]
+}
+</script>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+<style>
+/* ══════════════════════════════════════════
+   DESIGN TOKENS
+   ══════════════════════════════════════════ */
+:root {
+  --navy:        #0d1323;
+  --navy-lo:     #111827;
+  --navy-mid:    #151b2c;
+  --navy-hi:     #1a2235;
+  --navy-card:   #1e2640;
+  --navy-border: rgba(255,255,255,0.07);
+  --accent:       #ffb94c;
+  --accent-dim:   #e8a020;
+  --accent-glow:  rgba(255,185,76,0.12);
+  --violet-glow: rgba(110,80,220,0.08);
+  --text:        #dde2f9;
+  --text-muted:  rgba(221,226,249,0.48);
+  --text-mid:    rgba(221,226,249,0.72);
+  --on-accent:    #3a2200;
+  --hairline:    rgba(255,255,255,0.07);
+}
+* { margin:0; padding:0; box-sizing:border-box; }
+html { scroll-behavior:smooth; }
+body {
+  font-family:'Inter',sans-serif;
+  background: var(--navy);
+  color: var(--text);
+  line-height:1.6;
+  overflow-x:hidden;
+}
+/* ── Utils ── */
+.container { max-width:1200px; margin:0 auto; padding:0 48px; }
+.tag {
+  font-size:10px; font-weight:700; letter-spacing:0.28em;
+  color:var(--accent); text-transform:uppercase;
+  border-bottom:1px solid rgba(255,185,76,0.4);
+  padding-bottom:4px; display:inline-block; margin-bottom:24px;
+}
+.hl { height:1px; background:var(--hairline); }
+.grad {
+  background:linear-gradient(120deg,#ffb94c 0%,#ffe0a0 38%,#ffb94c 62%,#e07020 100%);
+  background-size:200% auto;
+  -webkit-background-clip:text; -webkit-text-fill-color:transparent;
+  background-clip:text;
+  animation: shimmer 5s linear infinite;
+}
+@keyframes shimmer { to { background-position:200% center; } }
+.btn-p {
+  display:inline-block; padding:15px 30px;
+  background:var(--accent); color:var(--on-accent);
+  font-weight:700; font-size:12px; letter-spacing:0.14em;
+  text-transform:uppercase; text-decoration:none;
+  border:none; cursor:pointer;
+  transition:background .2s, transform .15s;
+}
+.btn-p:hover { background:var(--accent-dim); transform:translateY(-1px); }
+.btn-g {
+  display:inline-block; padding:15px 30px;
+  background:transparent; color:var(--text);
+  font-weight:700; font-size:12px; letter-spacing:0.14em;
+  text-transform:uppercase; text-decoration:none;
+  border:1px solid rgba(221,226,249,0.25);
+  cursor:pointer; transition:border-color .2s,color .2s;
+}
+.btn-g:hover { border-color:var(--accent); color:var(--accent); }
+input,textarea,select {
+  background:transparent; color:var(--text);
+  border:none; border-bottom:1px solid rgba(255,255,255,0.15);
+  padding:12px 0; font-family:'Inter',sans-serif;
+  font-size:14px; width:100%; outline:none;
+  transition:border-color .2s;
+}
+input::placeholder,textarea::placeholder { color:var(--text-muted); }
+input:focus,textarea:focus,select:focus { border-color:var(--accent); }
+textarea { resize:vertical; min-height:88px; }
+select option { background:var(--navy-card); color:var(--text); }
+.fl { font-size:9px; font-weight:700; letter-spacing:0.22em; text-transform:uppercase; color:var(--accent); display:block; margin-bottom:6px; }
+
+/* ══════════════════════════════════════════
+   MOBILE NAV
+   ══════════════════════════════════════════ */
+.nav-hamburger {
+  display:none; flex-direction:column; justify-content:center;
+  gap:5px; width:36px; height:36px; background:none; border:none;
+  cursor:pointer; padding:4px; margin-left:8px; flex-shrink:0;
+}
+.nav-hamburger span {
+  display:block; height:1.5px; background:var(--text-mid);
+  border-radius:2px; transition:transform .25s ease, opacity .2s ease;
+}
+.nav-hamburger.open span:nth-child(1) { transform:translateY(6.5px) rotate(45deg); }
+.nav-hamburger.open span:nth-child(2) { opacity:0; transform:scaleX(0); }
+.nav-hamburger.open span:nth-child(3) { transform:translateY(-6.5px) rotate(-45deg); }
+
+.nav-drawer {
+  display:none; position:fixed; top:64px; left:0; right:0;
+  background:rgba(13,19,35,0.97); backdrop-filter:blur(24px);
+  -webkit-backdrop-filter:blur(24px);
+  border-bottom:1px solid var(--hairline); z-index:199;
+  padding:24px 32px 32px; flex-direction:column; gap:0;
+}
+.nav-drawer.open { display:flex; }
+.nav-drawer a {
+  font-size:14px; font-weight:600; letter-spacing:0.12em;
+  text-transform:uppercase; color:var(--text-muted);
+  text-decoration:none; padding:16px 0;
+  border-bottom:1px solid var(--hairline); transition:color .2s;
+}
+.nav-drawer a:last-of-type { border-bottom:none; }
+.nav-drawer a:hover { color:var(--accent); }
+.nav-drawer .drawer-cta { margin-top:24px; text-align:center; font-size:12px; }
+
+/* ── Section rhythm ── */
+section { padding:100px 0; position:relative; overflow:clip; }
+/* overflow:clip blocks paint overflow without creating a scroll container,
+   so position:sticky still works (unlike overflow:hidden which breaks it) */
+.s-lo  { background:var(--navy-lo); }
+.s-mid { background:var(--navy-mid); }
+
+/* Subtle ambient glow per section — keeps the palette alive below the hero */
+.s-lo::before, .s-mid::before {
+  content:''; position:absolute; pointer-events:none;
+  border-radius:50%; filter:blur(80px); z-index:0; opacity:0.55;
+}
+.s-lo::before {
+  width:500px; height:400px; top:-100px; right:-80px;
+  background: radial-gradient(ellipse, rgba(110,80,220,0.09) 0%, transparent 70%);
+}
+.s-mid::before {
+  width:600px; height:450px; bottom:-100px; left:-80px;
+  background: radial-gradient(ellipse, rgba(255,185,76,0.06) 0%, transparent 70%);
+}
+section > * { position:relative; z-index:1; }
+
+.sec-head { margin-bottom:64px; }
+.sec-title { font-size:clamp(28px,3vw,44px); font-weight:900; line-height:1.1; }
+.sec-sub { font-size:16px; color:var(--text-muted); margin-top:16px; max-width:480px; }
+
+/* ══════════════════════════════════════════
+   NAV
+   ══════════════════════════════════════════ */
+nav {
+  position:fixed; top:0; left:0; right:0; z-index:200;
+  background:rgba(13,19,35,0.72); backdrop-filter:blur(24px);
+  -webkit-backdrop-filter:blur(24px);
+  border-bottom:1px solid var(--hairline); padding:0 0 0 48px;
+}
+.nav-in {
+  max-width:none; margin:0;
+  display:flex; align-items:center; justify-content:space-between; height:64px;
+  padding-right:48px;
+}
+.nav-logo {
+  display:flex; align-items:center; gap:9px;
+  text-decoration:none; color:var(--text);
+}
+.nav-wordmark {
+  font-weight:300; font-size:16px; letter-spacing:0.08em;
+  color:var(--text); font-family:'Inter',sans-serif;
+}
+.nav-mark { flex-shrink:0; }
+.nav-ul { display:flex; gap:40px; list-style:none; }
+.nav-ul a {
+  font-size:11px; font-weight:600; letter-spacing:0.15em;
+  text-transform:uppercase; color:var(--text-muted);
+  text-decoration:none; transition:color .2s;
+}
+.nav-ul a:hover { color:var(--accent); }
+.nav-r { display:flex; align-items:center; gap:20px; }
+.lang {
+  background:transparent; border:none; border-bottom:none;
+  color:var(--text-muted); font-size:11px; font-weight:600;
+  letter-spacing:0.12em; cursor:pointer; padding:0; width:auto;
+  -webkit-appearance:none;
+}
+.lang:hover { color:var(--accent); }
+
+/* ══════════════════════════════════════════
+   HERO + CANVAS
+   ══════════════════════════════════════════ */
+#glc {
+  position:fixed; top:0; left:0;
+  width:100%; height:100vh;
+  z-index:0; display:block; pointer-events:none;
+  /* Only visible in hero viewport — masked by section bg below */
+}
+/* Fade canvas out as page scrolls — sections have opaque bg */
+.hero {
+  position:relative; z-index:10;
+  min-height:100vh; display:flex; align-items:center;
+  padding:140px 0 100px;
+}
+.wave-b { position:fixed; top:0; bottom:0; width:260px; pointer-events:none; z-index:5; }
+.wave-b.l { left:0; }
+.wave-b.r { right:0; }
+.wave-b svg { width:100%; height:100%; }
+/* Mask waves below hero */
+.wave-b { clip-path:inset(0 0 0 0); }
+
+.eyebrow {
+  display:flex; align-items:center; gap:14px;
+  font-size:10px; font-weight:700; letter-spacing:0.32em;
+  color:var(--accent); text-transform:uppercase; margin-bottom:30px;
+  opacity:0; animation:fu .8s ease .1s forwards;
+}
+.eyebrow::before { content:''; display:block; width:32px; height:1px; background:var(--accent); flex-shrink:0; }
+.hero-h1 {
+  font-size:clamp(52px,7.5vw,92px); font-weight:900;
+  line-height:.92; letter-spacing:-.028em; margin-bottom:32px;
+  opacity:0; animation:fu .9s ease .25s forwards;
+}
+.hero-sub {
+  font-size:18px; font-weight:400;
+  color:var(--text-mid); max-width:560px; line-height:1.68;
+  margin-bottom:48px;
+  opacity:0; animation:fu .9s ease .4s forwards;
+}
+.hero-ctas {
+  display:flex; gap:16px; flex-wrap:wrap; margin-bottom:80px;
+  opacity:0; animation:fu .9s ease .55s forwards;
+}
+.stat-row {
+  display:flex; gap:56px; flex-wrap:wrap;
+  padding-top:48px; border-top:1px solid var(--hairline);
+  opacity:0; animation:fu 1s ease .7s forwards;
+}
+.stat-num {
+  font-size:40px; font-weight:900; line-height:1;
+  background:linear-gradient(135deg,#ffb94c 0%,#ffe0a0 45%,#e07020 100%);
+  -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text;
+}
+.stat-label { font-size:11px; font-weight:600; letter-spacing:.14em; color:var(--text-muted); text-transform:uppercase; margin-top:7px; }
+@keyframes fu { from{opacity:0;transform:translateY(22px)} to{opacity:1;transform:none} }
+
+.scroll-hint {
+  position:absolute; bottom:36px; left:50%; transform:translateX(-50%);
+  display:flex; flex-direction:column; align-items:center; gap:8px;
+  font-size:9px; font-weight:700; letter-spacing:.25em; color:var(--text-muted);
+  text-transform:uppercase; z-index:10;
+  animation:fu 1s ease 1.2s both;
+}
+.scroll-line {
+  width:1px; height:40px;
+  background:linear-gradient(to bottom,var(--accent),transparent);
+  animation:sp 2s ease-in-out infinite;
+}
+@keyframes sp { 0%,100%{opacity:.3;transform:scaleY(1)} 50%{opacity:.9;transform:scaleY(1.15)} }
+
+/* ══════════════════════════════════════════
+   B02: AUDIT FORM
+   ══════════════════════════════════════════ */
+.audit-grid { display:grid; grid-template-columns:1fr 1fr; gap:80px; align-items:start; }
+.audit-h2 { font-size:36px; font-weight:900; line-height:1.1; margin-bottom:16px; }
+.audit-sub { color:var(--text-muted); font-size:16px; line-height:1.65; margin-bottom:32px; }
+.step-list { display:flex; flex-direction:column; gap:12px; }
+.step-row { display:flex; align-items:center; gap:10px; font-size:13px; color:var(--text-muted); }
+.step-num { color:var(--accent); font-weight:700; font-size:13px; flex-shrink:0; }
+.form-grid { display:grid; grid-template-columns:1fr 1fr; gap:28px 24px; }
+.form-grid .full { grid-column:1/-1; }
+.form-micro { font-size:11px; color:var(--text-muted); margin-top:10px; }
+
+/* ══════════════════════════════════════════
+   B03: METRICS
+   ══════════════════════════════════════════ */
+.metrics-grid { display:grid; grid-template-columns:repeat(3,1fr); }
+.mc { padding:48px 40px; border-right:1px solid var(--hairline); border-bottom:1px solid var(--hairline); }
+.mc:nth-child(3n) { border-right:none; }
+.mc:nth-child(4),.mc:nth-child(5),.mc:nth-child(6) { border-bottom:none; }
+.m-num {
+  font-size:54px; font-weight:900; line-height:1;
+  background:linear-gradient(135deg,#ffb94c 0%,#ffe0a0 40%,#e07020 100%);
+  -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text;
+}
+.m-svc { font-size:10px; font-weight:700; letter-spacing:.2em; text-transform:uppercase; color:var(--text-muted); margin:14px 0 8px; }
+.m-lbl { font-size:14px; color:var(--text-mid); line-height:1.55; }
+
+/* ══════════════════════════════════════════
+   B04: CREDENTIALS
+   ══════════════════════════════════════════ */
+.creds-in { max-width:760px; margin:0 auto; text-align:center; }
+.creds-h2 { font-size:clamp(28px,4vw,48px); font-weight:900; line-height:1.1; margin-bottom:24px; }
+.logo-strip { display:flex; flex-wrap:wrap; justify-content:center; gap:48px; margin:48px 0; }
+.logo-item { font-size:12px; font-weight:700; letter-spacing:.22em; text-transform:uppercase; color:var(--text-muted); }
+.cert-strip { display:flex; gap:16px; justify-content:center; flex-wrap:wrap; margin-top:40px; padding-top:40px; border-top:1px solid var(--hairline); }
+.cert { padding:8px 18px; border:1px solid rgba(255,255,255,0.12); font-size:11px; font-weight:600; letter-spacing:.14em; text-transform:uppercase; color:var(--text-muted); }
+.pull {
+  font-size:18px; font-style:italic; color:var(--text-mid);
+  max-width:520px; margin:40px auto; line-height:1.6;
+  border-left:2px solid var(--accent); padding-left:24px;
+  text-align:left;
+}
+
+/* ══════════════════════════════════════════
+   B05: SERVICES
+   ══════════════════════════════════════════ */
+.svc-grid { display:grid; grid-template-columns:repeat(2,1fr); }
+.svc { padding:48px 40px; border-right:1px solid var(--hairline); border-bottom:1px solid var(--hairline); transition:background .2s; }
+.svc:hover { background:rgba(255,185,76,0.03); }
+.svc:nth-child(2n) { border-right:none; }
+.svc:nth-last-child(-n+2) { border-bottom:none; }
+
+/* Fix: anchor-wrapped service cards must inherit text color —
+   default <a> blue/purple was bleeding through on cards 01 and 06 */
+a.svc, a.svc:link, a.svc:visited, a.svc:hover, a.svc:active {
+  color: var(--text);
+  text-decoration: none;
+}
+a.svc .svc-t { color: var(--text); transition: color .2s ease; }
+a.svc:hover .svc-t { color: var(--accent); }
+.svc-n { font-size:10px; font-weight:700; letter-spacing:.2em; color:var(--accent); margin-bottom:18px; }
+.svc-t { font-size:21px; font-weight:800; margin-bottom:12px; line-height:1.25; }
+.svc-d { font-size:14px; color:var(--text-muted); line-height:1.65; margin-bottom:20px; }
+.svc-u { font-size:12px; color:var(--accent); font-weight:600; padding:10px 0; border-top:1px solid var(--hairline); }
+
+/* ══════════════════════════════════════════
+   B06: WHY
+   ══════════════════════════════════════════ */
+.why-grid { display:grid; grid-template-columns:1fr 2fr; gap:80px; align-items:start; }
+.why-h { font-size:clamp(26px,3vw,40px); font-weight:900; line-height:1.1; position:sticky; top:100px; }
+.why-sub { color:var(--text-muted); font-size:14px; line-height:1.65; margin-top:20px; font-style:italic; }
+.why-item { padding:32px 0; border-bottom:1px solid var(--hairline); display:grid; grid-template-columns:100px 1fr; gap:24px; }
+.why-item:first-child { padding-top:0; }
+.why-tag { font-size:10px; font-weight:700; letter-spacing:.14em; text-transform:uppercase; color:var(--accent); padding-top:3px; }
+.why-title { font-size:18px; font-weight:700; margin-bottom:8px; line-height:1.25; }
+.why-desc { font-size:14px; color:var(--text-muted); line-height:1.65; }
+
+/* ══════════════════════════════════════════
+   B07: PROTOCOL
+   ══════════════════════════════════════════ */
+.proto-grid { display:grid; grid-template-columns:repeat(5,1fr); }
+.ps { padding:40px 32px; border-right:1px solid var(--hairline); }
+.ps:last-child { border-right:none; }
+.ps-n { font-size:10px; font-weight:700; letter-spacing:.2em; color:var(--accent); margin-bottom:20px; }
+.ps-t { font-size:17px; font-weight:800; margin-bottom:12px; line-height:1.25; }
+.ps-d { font-size:13px; color:var(--text-muted); line-height:1.65; }
+
+/* ══════════════════════════════════════════
+   B08: PLAYBOOK
+   ══════════════════════════════════════════ */
+.lm-grid { display:grid; grid-template-columns:1fr 1fr; gap:80px; align-items:center; }
+.lm-doc { background:var(--navy-card); padding:40px; border:1px solid var(--hairline); }
+.lm-toc { list-style:none; }
+.lm-toc li { font-size:13px; color:var(--text-muted); padding:10px 0; border-bottom:1px solid var(--hairline); }
+.lm-toc li:last-child { border-bottom:none; }
+.lm-toc strong { color:var(--text); }
+
+/* ══════════════════════════════════════════
+   B09: STRATEGY CTA
+   ══════════════════════════════════════════ */
+.cta-in { text-align:center; max-width:700px; margin:0 auto; }
+.async-badge {
+  display:inline-flex; align-items:center; gap:8px; padding:8px 16px;
+  border:1px solid rgba(255,185,76,0.25);
+  font-size:11px; color:var(--accent); font-weight:600; letter-spacing:.1em;
+  margin-bottom:32px;
+}
+.async-dot { width:6px; height:6px; border-radius:50%; background:#4caf50; animation:pulse 2s ease-in-out infinite; }
+@keyframes pulse { 0%,100%{opacity:.6;transform:scale(1)} 50%{opacity:1;transform:scale(1.2)} }
+.cta-h { font-size:clamp(30px,4vw,56px); font-weight:900; line-height:1.05; margin-bottom:20px; }
+.cta-sub { font-size:18px; color:var(--text-muted); line-height:1.65; margin-bottom:48px; }
+.cta-form { display:grid; grid-template-columns:1fr 1fr; gap:28px 24px; max-width:640px; margin:0 auto 28px; text-align:left; }
+.cta-form .full { grid-column:1/-1; }
+.trust { font-size:12px; color:var(--text-muted); letter-spacing:.06em; }
+
+/* ══════════════════════════════════════════
+   B10: FAQ
+   ══════════════════════════════════════════ */
+.faq-grid { display:grid; grid-template-columns:1fr 2fr; gap:80px; align-items:start; }
+.faq-h { font-size:36px; font-weight:900; line-height:1.1; position:sticky; top:100px; }
+.faq-item { border-bottom:1px solid var(--hairline); }
+.faq-q {
+  padding:22px 0; font-size:16px; font-weight:600;
+  cursor:pointer; display:flex; justify-content:space-between; align-items:center; gap:20px;
+  transition:color .2s;
+}
+.faq-q:hover { color:var(--accent); }
+.faq-tog { font-size:22px; color:var(--accent); font-weight:300; flex-shrink:0; line-height:1; }
+.faq-a { display:none; padding:0 0 22px; font-size:14px; color:var(--text-muted); line-height:1.75; }
+.faq-item.open .faq-a { display:block; }
+.faq-item.open .faq-q { color:var(--accent); }
+.faq-item.open .faq-tog::before { content:'−'; }
+.faq-tog::before { content:'+'; }
+
+/* ══════════════════════════════════════════
+   FOOTER
+   ══════════════════════════════════════════ */
+footer { background:var(--navy-mid); padding:80px 48px 40px; }
+.foot-grid { max-width:1200px; margin:0 auto; display:grid; grid-template-columns:2fr 1fr 1fr 1fr; gap:60px; margin-bottom:60px; }
+.foot-logo { font-size:16px; font-weight:900; letter-spacing:.22em; margin-bottom:14px; }
+.foot-tag { font-size:13px; color:var(--text-muted); line-height:1.65; }
+.foot-col h4 { font-size:10px; font-weight:700; letter-spacing:.2em; text-transform:uppercase; color:var(--accent); margin-bottom:20px; }
+.foot-col a { display:block; font-size:13px; color:var(--text-muted); text-decoration:none; margin-bottom:12px; transition:color .2s; }
+.foot-col a:hover { color:var(--text); }
+.foot-bot { max-width:1200px; margin:0 auto; padding-top:40px; border-top:1px solid var(--hairline); display:flex; justify-content:space-between; }
+.foot-copy { font-size:11px; color:var(--text-muted); }
+
+
+/* ══════════════════════════════════════════
+   MOBILE-FIRST OVERLAY
+   Placed at end of the style block to guarantee cascade wins over earlier desktop rules.
+   Breakpoints:
+     ≤1024px — tablet hamburger, grids collapse to 2-col
+     ≤768px  — full single-column mobile
+     ≤480px  — small-phone tightening (iPhone SE, 13 mini)
+   ══════════════════════════════════════════ */
+
+/* Global safety: prevent any rogue wide element from creating horizontal scroll.
+   The fixed .wave-b decorations (260px each side) were the main offender.
+   max-width:100% + overflow-x:hidden kills that without affecting sticky positioning
+   because neither html nor body was acting as a sticky ancestor. */
+html, body { max-width:100%; overflow-x:hidden; }
+
+/* --- TABLET & BELOW (≤1024px): nav collapses to hamburger, wide grids start breaking --- */
+@media (max-width:1024px) {
+  .nav-ul { display:none !important; }
+  .lang  { display:none !important; }
+  .nav-r > .btn-p { display:none !important; }
+  .nav-hamburger { display:flex !important; }
+  .container { padding:0 32px; }
+
+  .proto-grid { grid-template-columns:repeat(2,1fr); }
+  .ps { border-right:1px solid var(--hairline); border-bottom:1px solid var(--hairline); }
+  .ps:nth-child(2n) { border-right:none; }
+
+  .metrics-grid { grid-template-columns:repeat(2,1fr); }
+  .mc { border-right:1px solid var(--hairline); }
+  .mc:nth-child(2n) { border-right:none; }
+
+  .faq-grid { gap:48px; }
+}
+
+/* --- MOBILE (≤768px): full single-column collapse --- */
+@media (max-width:768px) {
+  /* Nav: already hamburger from 1024 rule, but tighten padding */
+  nav { padding:0 0 0 20px !important; }
+  .nav-in { padding-right:20px !important; height:60px !important; }
+  .nav-wordmark { font-size:15px !important; }
+  .nav-mark { width:28px !important; height:28px !important; }
+
+  /* Container: narrow phones need tight padding */
+  .container { padding:0 20px; }
+
+  /* Decorative side waves cause horizontal overflow on mobile (260px each × 2 > viewport).
+     Hide entirely — they're purely decorative and desktop-only visual flourish. */
+  .wave-b { display:none !important; }
+
+  /* Hero: tighter padding, tuned typography */
+  .hero { padding:110px 0 72px !important; min-height:auto; }
+  .hero-h1 { font-size:clamp(40px, 11vw, 64px) !important; line-height:0.98 !important; }
+  .hero-sub { font-size:16px !important; margin-bottom:36px !important; }
+  .hero-ctas { flex-direction:column !important; gap:12px; margin-bottom:56px !important; }
+  .hero-ctas .btn-p, .hero-ctas .btn-g { text-align:center; width:100%; }
+  .eyebrow { font-size:10px !important; letter-spacing:0.26em !important; margin-bottom:24px !important; }
+
+  /* Hero stat-row: stack into 2×2 grid instead of flex-wrap chaos */
+  .stat-row { display:grid !important; grid-template-columns:1fr 1fr !important; gap:28px 20px !important; padding-top:36px !important; }
+  .stat-num { font-size:34px !important; }
+  .stat-label { font-size:10px !important; line-height:1.4; }
+
+  /* Section rhythm */
+  section { padding:64px 0 !important; }
+  .sec-head { margin-bottom:40px !important; }
+
+  /* ALL major grids collapse to single column */
+  .audit-grid { grid-template-columns:1fr !important; gap:40px !important; }
+  .svc-grid { grid-template-columns:1fr !important; }
+  .svc { border-right:none !important; padding:40px 24px !important; }
+  .why-grid { grid-template-columns:1fr !important; gap:36px !important; }
+  .why-h { position:static !important; }
+  .why-item { grid-template-columns:64px 1fr !important; gap:16px !important; padding:24px 0 !important; }
+  .proto-grid { grid-template-columns:1fr !important; }
+  .ps { border-right:none !important; border-bottom:1px solid var(--hairline) !important; padding:32px 24px !important; }
+  .ps:last-child { border-bottom:none !important; }
+  .lm-grid { grid-template-columns:1fr !important; gap:40px !important; }
+  .cta-form { grid-template-columns:1fr !important; gap:16px !important; }
+  .form-grid { grid-template-columns:1fr !important; }
+  .faq-grid { grid-template-columns:1fr !important; gap:32px !important; }
+  .faq-h { position:static !important; }
+
+  /* Metrics grid: 2×2 is the sweet spot on phones — single column wastes space with these
+     short numeric values */
+  .metrics-grid { grid-template-columns:1fr 1fr !important; }
+  .mc { padding:32px 20px !important; border-right:1px solid var(--hairline) !important; border-bottom:1px solid var(--hairline) !important; }
+  .mc:nth-child(2n) { border-right:none !important; }
+  .mc .stat-num, .mc > div:first-child { font-size:32px !important; }
+
+  /* Credibility logo strip */
+  .creds-in { padding:0 4px !important; }
+  .logo-strip { gap:24px !important; margin:32px 0 !important; }
+
+  /* Footer — 2 cols on mobile (looks balanced with 4 columns of info) */
+  .foot-grid { grid-template-columns:1fr 1fr !important; gap:32px !important; padding:0 !important; }
+  footer { padding:60px 20px 32px !important; }
+  .foot-bot { flex-direction:column !important; gap:12px !important; align-items:flex-start !important; text-align:left !important; }
+
+  /* Legal modal — already 600px breakpoint exists, reinforce */
+  .legal-modal { padding:28px 20px 36px !important; }
+}
+
+/* --- SMALL PHONES (≤480px): iPhone SE, 13 mini, narrow Androids --- */
+@media (max-width:480px) {
+  .container { padding:0 16px; }
+  nav { padding:0 0 0 16px !important; }
+  .nav-in { padding-right:16px !important; }
+
+  .hero { padding:96px 0 56px !important; }
+  .hero-h1 { font-size:clamp(36px, 11.5vw, 52px) !important; }
+  .hero-sub { font-size:15px !important; }
+
+  /* Stats stack completely single-column on narrow phones — 2-col cramps the numbers */
+  .stat-row { grid-template-columns:1fr !important; gap:24px !important; padding-top:32px !important; }
+  .stat-num { font-size:32px !important; }
+
+  /* Metrics grid also single-col — "+40%" needs room to breathe */
+  .metrics-grid { grid-template-columns:1fr !important; }
+  .mc { border-right:none !important; padding:28px 16px !important; }
+
+  /* Footer 1-column on smallest phones */
+  .foot-grid { grid-template-columns:1fr !important; gap:28px !important; }
+  footer { padding:48px 16px 28px !important; }
+
+  /* Section breathing room */
+  section { padding:56px 0 !important; }
+  .sec-head { margin-bottom:32px !important; }
+
+  /* Tighten protocol & why-item spacing */
+  .ps { padding:28px 20px !important; }
+  .why-item { padding:20px 0 !important; grid-template-columns:56px 1fr !important; gap:14px !important; }
+
+  /* Small buttons get tighter */
+  .btn-p, .btn-g { font-size:12px !important; padding:14px 20px !important; }
+}
+
+
+.lang-sw{position:relative;}
+.lang-sw summary{list-style:none;cursor:pointer;font-size:11px;font-weight:600;
+  letter-spacing:0.13em;text-transform:uppercase;color:var(--accent);
+  padding:2px 0;line-height:1;user-select:none;}
+.lang-sw summary::-webkit-details-marker{display:none;}
+.ls-drop{position:absolute;right:0;top:calc(100% + 6px);
+  background:var(--bg-card);border:1px solid rgba(255,255,255,.12);
+  border-radius:6px;padding:4px;min-width:64px;z-index:200;}
+.ls-opt{display:block;font-size:11px;font-weight:600;letter-spacing:0.13em;
+  text-transform:uppercase;color:var(--text-muted);text-decoration:none;
+  padding:6px 10px;border-radius:4px;transition:color .15s,background .15s;}
+.ls-opt:hover{color:var(--accent);background:rgba(255,255,255,.05);}
+.ls-opt.ls-active{display:none;}
+</style>
+<script>if(!localStorage.getItem('am_lang_chosen'))localStorage.setItem('am_lang_chosen','locale');</script>
+</head>
+<body>
+
+<!-- ── Fixed WebGL canvas (hero viewport only, sections cover it) ── -->
+<canvas id="glc"></canvas>
+
+<!-- ── Wave borders (fixed, visible through hero) ── -->
+<div class="wave-b l">
+  <svg viewBox="0 0 260 1000" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+    <defs><linearGradient id="wgl" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#7b6fff" stop-opacity="0.13"/><stop offset="100%" stop-color="#7b6fff" stop-opacity="0"/></linearGradient></defs>
+    <path id="wL" d="M0 0 Q100 200 30 400 Q-40 600 90 800 Q180 900 0 1000 L0 0Z" fill="url(#wgl)"/>
+    <path id="wLl" d="M0 120 Q70 300 10 500 Q-50 700 70 850" fill="none" stroke="#7b6fff" stroke-width="0.6" stroke-opacity="0.18"/>
+  </svg>
+</div>
+<div class="wave-b r">
+  <svg viewBox="0 0 260 1000" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+    <defs><linearGradient id="wgr" x1="1" y1="0" x2="0" y2="0"><stop offset="0%" stop-color="#7b6fff" stop-opacity="0.13"/><stop offset="100%" stop-color="#7b6fff" stop-opacity="0"/></linearGradient></defs>
+    <path id="wR" d="M260 0 Q160 200 230 400 Q300 600 170 800 Q90 900 260 1000 L260 0Z" fill="url(#wgr)"/>
+    <path id="wRl" d="M260 120 Q190 300 250 500 Q310 700 190 850" fill="none" stroke="#7b6fff" stroke-width="0.6" stroke-opacity="0.18"/>
+  </svg>
+</div>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-in">
+    <a class="nav-logo" href="/">
+      <!--
+        Logo faithful reconstruction:
+        - Apex: top-right (92,8)
+        - Right angle: bottom-right (92,92)
+        - Far corner: bottom-left (8,92)
+        - RIGHT side (92,8)→(92,92): straight vertical ✓
+        - BOTTOM (92,92)→(8,92): straight horizontal ✓
+        - LEFT/hypotenuse (92,8)→(8,92): CURVED — concave inward (bows toward right angle) ✓
+        - Internal lines: radial fan from apex + arcs from multiple centers ✓
+      -->
+      <svg class="nav-mark" width="32" height="32" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="gld" x1="8" y1="92" x2="92" y2="8" gradientUnits="userSpaceOnUse">
+            <stop offset="0%"   stop-color="#6a4000"/>
+            <stop offset="30%"  stop-color="#b87010"/>
+            <stop offset="65%"  stop-color="#ffb94c"/>
+            <stop offset="100%" stop-color="#fff5cc"/>
+          </linearGradient>
+        </defs>
+
+        <!-- Outer triangle:
+             right side: straight (92,8)→(92,92)
+             bottom:     straight (92,92)→(8,92)
+             hypotenuse: CURVED — cubic bezier bowing inward toward right angle
+             Control points pull the curve toward ~(65,65) creating the concave "sail" shape -->
+        <path d="M92 8 L92 92 L8 92 C 38 92 72 58 92 8 Z"
+              stroke="url(#gld)" stroke-width="1.6" fill="none"
+              stroke-linejoin="round"/>
+
+        <!-- Radial fan from apex (92,8) → spread across base -->
+        <line x1="92" y1="8" x2="8"  y2="92" stroke="url(#gld)" stroke-width="0.90" opacity="0.88"/>
+        <line x1="92" y1="8" x2="24" y2="92" stroke="url(#gld)" stroke-width="0.75" opacity="0.75"/>
+        <line x1="92" y1="8" x2="40" y2="92" stroke="url(#gld)" stroke-width="0.62" opacity="0.64"/>
+        <line x1="92" y1="8" x2="56" y2="92" stroke="url(#gld)" stroke-width="0.52" opacity="0.54"/>
+        <line x1="92" y1="8" x2="72" y2="92" stroke="url(#gld)" stroke-width="0.42" opacity="0.42"/>
+
+        <!-- Horizontal parallels from hypotenuse curve to right edge
+             At each y, the curve x ≈ follows the bezier, so start a bit inside -->
+        <line x1="75" y1="24" x2="92" y2="24" stroke="url(#gld)" stroke-width="0.68" opacity="0.65"/>
+        <line x1="63" y1="38" x2="92" y2="38" stroke="url(#gld)" stroke-width="0.60" opacity="0.57"/>
+        <line x1="53" y1="52" x2="92" y2="52" stroke="url(#gld)" stroke-width="0.52" opacity="0.50"/>
+        <line x1="40" y1="66" x2="92" y2="66" stroke="url(#gld)" stroke-width="0.44" opacity="0.42"/>
+        <line x1="26" y1="80" x2="92" y2="80" stroke="url(#gld)" stroke-width="0.38" opacity="0.34"/>
+
+        <!-- Arcs — centered at right-angle corner (92,92), sweeping from base to right side
+             These give the web/mesh pattern in the lower portion of the logo -->
+        <path d="M70 92 A22 22 0 0 0 92 70" fill="none" stroke="url(#gld)" stroke-width="0.72" opacity="0.70"/>
+        <path d="M54 92 A38 38 0 0 0 92 54" fill="none" stroke="url(#gld)" stroke-width="0.64" opacity="0.62"/>
+        <path d="M38 92 A54 54 0 0 0 92 38" fill="none" stroke="url(#gld)" stroke-width="0.56" opacity="0.54"/>
+        <path d="M22 92 A70 70 0 0 0 92 22" fill="none" stroke="url(#gld)" stroke-width="0.48" opacity="0.44"/>
+        <path d="M10 92 A83 83 0 0 0 92 10" fill="none" stroke="url(#gld)" stroke-width="0.40" opacity="0.34"/>
+
+        <!-- Apex accent dot -->
+        <circle cx="92" cy="8" r="1.8" fill="#fff5cc"/>
+      </svg>
+      <span class="nav-wordmark">anymetric</span>
+    </a>
+    <ul class="nav-ul">
+      <li><a href="#results">Результаты</a></li>
+      <li><a href="#services">Услуги</a></li>
+      <li><a href="#protocol">Подход</a></li>
+      <li><a href="#playbook">Playbook</a></li>
+    </ul>
+    <div class="nav-r">
+      <details class="lang-sw" id="langSw" role="navigation" aria-label="Language"><summary class="ls-cur" lang="ru">RU ▾</summary><div class="ls-drop"><a href="/" class="ls-opt" lang="en" hreflang="en">EN</a><a href="/de/" class="ls-opt" lang="de" hreflang="de">DE</a><a href="#" class="ls-opt ls-active" lang="ru" hreflang="ru">RU</a></div></details>
+      <a href="#audit" class="btn-p" style="font-size:11px;padding:12px 22px;">Бесплатный аудит</a>
+      <button class="nav-hamburger" id="navHam" type="button" aria-label="Открыть меню" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- Mobile nav drawer -->
+<div class="nav-drawer" id="navDrawer" role="navigation" aria-label="Мобильная навигация">
+  <a href="#results" onclick="closeDrawer()">Результаты</a>
+  <a href="#services" onclick="closeDrawer()">Услуги</a>
+  <a href="#protocol" onclick="closeDrawer()">Подход</a>
+  <a href="#playbook" onclick="closeDrawer()">Playbook</a>
+  <a href="#audit" class="btn-p drawer-cta" onclick="closeDrawer()">Бесплатный аудит →</a>
+</div>
+
+<!-- ════════════════════════════════════════
+     B01: HERO
+     ════════════════════════════════════════ -->
+<section class="hero">
+  <div class="container" style="position:relative;z-index:10;">
+    <p class="eyebrow">Лаборатория ИИ-продуктов и выручки</p>
+    <h1 class="hero-h1">
+      Мы двигаем метрики,<br>
+      <span class="grad">которые имеют значение.</span>
+    </h1>
+    <p class="hero-sub">
+      Большинство компаний теряют выручку — в узких местах, которые ещё даже не измерили.
+      Мы находим их, устраняем за недели и привязываем своё вознаграждение к результату.
+    </p>
+    <div class="hero-ctas">
+      <a href="#audit" class="btn-p">Получить бесплатный аудит →</a>
+      <a href="#results" class="btn-g">Что мы двигаем</a>
+    </div>
+    <div class="stat-row">
+      <div><div class="stat-num">2×</div><div class="stat-label">Customer LTV за счёт ИИ-персонализации</div></div>
+      <div><div class="stat-num">−60%</div><div class="stat-label">Снижение операционных расходов</div></div>
+      <div><div class="stat-num">+40%</div><div class="stat-label">CSAT с ИИ-опытом</div></div>
+      <div><div class="stat-num">3×</div><div class="stat-label">Быстрее выпуск продукта</div></div>
+    </div>
+  </div>
+  <div class="scroll-hint"><div class="scroll-line"></div>Прокрутка</div>
+</section>
+
+<!-- ════════════════════════════════════════
+     B02: AUDIT INTAKE
+     ════════════════════════════════════════ -->
+<section class="s-lo" id="audit">
+  <div class="container">
+    <div class="audit-grid">
+      <div>
+        <div class="tag">Бесплатный аудит</div>
+        <h2 class="audit-h2">Какая из ваших метрик <span class="grad">недооценена сильнее всего?</span></h2>
+        <p class="audit-sub">Расскажите, где у вас пробуксовка — или где, по вашим ощущениям, скрыт самый крупный неиспользованный потенциал. Senior AI PM возвращается с прямым, применимым аудитом. Без презентации.</p>
+        <div class="step-list">
+          <div class="step-row"><span class="step-num">01.</span> Опишите свою задачу</div>
+          <div class="step-row"><span class="step-num">02.</span> Получите персональный аудит в течение 48 часов</div>
+          <div class="step-row"><span class="step-num">03.</span> Сами решите, подходим ли мы — без давления</div>
+        </div>
+      </div>
+      <div>
+        <form class="form-grid" name="audit-intake" method="POST">
+          <input type="hidden" name="form-name" value="audit-intake">
+          <input type="hidden" name="access_key" value="0ccc9df0-0528-4fe9-81dd-a593fadfadf3">
+          <input type="hidden" name="subject" value="[anymetric/RU] Заявка на аудит">
+          <p style="display:none;"><label>Не заполняйте это поле: <input name="bot-field"></label></p>
+          <div><label class="fl">Имя и фамилия</label><input type="text" name="name" placeholder="Ваше имя" required></div>
+          <div><label class="fl">Рабочая почта</label><input type="email" name="email" placeholder="вы@компания.com" required></div>
+          <div><label class="fl">Компания</label><input type="text" name="company" placeholder="Ваша компания"></div>
+          <div><label class="fl">Ваша роль</label><input type="text" name="role" placeholder="CMO / CTO / Основатель"></div>
+          <div class="full">
+            <label class="fl">Основной фокус</label>
+            <select name="focus"><option value="">Выберите приоритет…</option><option>Рост выручки и конверсии</option><option>Снижение издержек и автоматизация</option><option>Разработка ИИ-продуктов</option><option>Customer experience и удержание</option><option>ИИ-видимость (GEO / AEO)</option><option>Данные и аналитика</option></select>
+          </div>
+          <div class="full"><label class="fl">Ваша задача и метрика, которую нужно сдвинуть</label><textarea name="challenge" placeholder="Напр.: Конверсия упала с ростом AI-поиска. Теряем входящую видимость и хотим понять, что ИИ может вернуть быстрее всего."></textarea></div>
+          <div class="full">
+            <button type="submit" class="btn-p" style="width:100%;" onclick="plausible('Audit Form Submit',{props:{form:'audit-intake'}})">Отправить заявку на аудит →</button>
+            <p class="form-micro" style="margin-top:10px;">Ответ от senior AI PM в течение 48 часов. Без отдела продаж. Без follow-up — если только вы сами этого не захотите.</p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════
+     B03: METRICS
+     ════════════════════════════════════════ -->
+<section id="results">
+  <div class="container">
+    <div class="sec-head">
+      <div class="tag">Что мы двигаем</div>
+      <h2 class="sec-title">Услуги, измеримые в<br><span class="grad">выручке и эффективности.</span></h2>
+      <p class="sec-sub">Что получает бизнес, когда перестаёт оптимизировать по интуиции и начинает измерять то, что реально двигает выручку.</p>
+    </div>
+    <div class="hl"></div>
+    <div class="metrics-grid">
+      <div class="mc"><div class="m-num">2×</div><div class="m-svc">ИИ-персонализация и CRO</div><div class="m-lbl">Рост Customer Lifetime Value через ИИ-рекомендации, персонализированные клиентские пути и системы удержания.</div></div>
+      <div class="mc"><div class="m-num">+40%</div><div class="m-svc">ИИ-Customer Experience</div><div class="m-lbl">Рост CSAT, когда ИИ-агенты берут tier-1 поддержку: быстрее решение, 24/7 доступность, стабильное качество на любом масштабе.</div></div>
+      <div class="mc"><div class="m-num">+30%</div><div class="m-svc">GEO- и AEO-оптимизация</div><div class="m-lbl">Конверсия из LLM-трафика — пользователи AI-поиска конвертируются примерно в 2× выше стандартного органического трафика.</div></div>
+      <div class="mc"><div class="m-num">−60%</div><div class="m-svc">Агентная автоматизация</div><div class="m-lbl">Снижение операционных расходов в отчётности, онбординге, триаже поддержки и процессах обработки данных.</div></div>
+      <div class="mc"><div class="m-num">3×</div><div class="m-svc">Разработка ИИ-продукта (MLP)</div><div class="m-lbl">Быстрее time-to-market, чем классическая разработка — от подтверждённой концепции до production-ready за недели.</div></div>
+      <div class="mc"><div class="m-num">−75%</div><div class="m-svc">ИИ-аналитика и Intelligence</div><div class="m-lbl">Меньше времени на ручную отчётность и BI — решения по данным за минуты, а не дни.</div></div>
+    </div>
+    <div class="hl"></div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════
+     B04: CREDENTIALS
+     ════════════════════════════════════════ -->
+<section class="s-lo">
+  <div class="container">
+    <div class="creds-in">
+      <div class="tag">Кто двигал эти метрики</div>
+      <h2 class="creds-h2">Метрики были публичны.<br>Наши <span class="grad">имена — нет.</span></h2>
+      <p style="color:var(--text-muted);font-size:17px;line-height:1.65;margin-bottom:8px;">Мы годами двигали метрики в некоторых из самых известных брендов мира. Нам важнее был результат, чем узнаваемость — и нашим клиентам так было удобнее.</p>
+      <div class="logo-strip">
+        <span class="logo-item">LVMH</span>
+        <span class="logo-item">Sephora</span>
+        <span class="logo-item">Kingfisher</span>
+        <span class="logo-item">Castorama</span>
+        <span class="logo-item">Remmers GmbH</span>
+      </div>
+      <div class="pull">Наши имена не появляются в пресс-релизах.<br>Наш вклад виден в квартальных отчётах.</div>
+      <div style="margin-top:28px;text-align:center;"><a href="/results" class="btn-g" style="font-size:11px;" onclick="plausible('CTA Click — See Results')">Смотреть кейсы и метрики →</a></div>
+      <div class="cert-strip">
+        <div class="cert">AI Product Academy</div>
+        <div class="cert">Maven — AI PM</div>
+        <div class="cert">DeepLearning.AI</div>
+        <div class="cert">Certified AI PMs</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════
+     B05: SERVICES
+     ════════════════════════════════════════ -->
+<section id="services">
+  <div class="container">
+    <div class="sec-head">
+      <div class="tag">От стратегии до релиза</div>
+      <h2 class="sec-title">Шесть способов повысить <br><span class="grad">вашу прибыль.</span></h2>
+      <p class="sec-sub">Названы по задаче, которую решают. Измерены по тому, что они делают с вашими цифрами.</p>
+    </div>
+    <div class="hl"></div>
+    <div class="svc-grid">
+      <a class="svc" href="/geo-aeo-optimization" style="text-decoration:none;display:block;"><div class="svc-n">01 — GEO- И AEO-ОПТИМИЗАЦИЯ</div><h3 class="svc-t">Станьте ответом, который ИИ-движки выдают вашим клиентам.</h3><p class="svc-d">Когда ChatGPT, Perplexity и Gemini отвечают на вопросы ваших клиентов, цитировать должны именно ваш бренд. Мы перестраиваем сигналы авторитетности так, чтобы ИИ-движки рекомендовали вас — а не конкурентов.</p><div class="svc-u">↑ +30% CR с LLM-трафика · ↑ +25% citation rate · 2–4 недели → Подробнее об услуге</div></a>
+      <div class="svc"><div class="svc-n">02 — ГОЛОСОВОЙ ИИ-АГЕНТ</div><h3 class="svc-t">Каждый пропущенный звонок — в зафиксированную выручку.</h3><p class="svc-d">Каждый неотвеченный звонок — это выручка, которая уходит без прощания. Мы строим голосовых ИИ-агентов, которые квалифицируют, отвечают и конвертируют входящие 24/7 — голосом вашего бренда, под вашим именем.</p><div class="svc-u">↑ +15% возврат выручки со звонков · 24/7 без пропусков · <a href="#audit" style="color:var(--accent);text-decoration:none;">Бесплатный аудит →</a></div></div>
+      <div class="svc"><div class="svc-n">03 — АГЕНТНАЯ АВТОМАТИЗАЦИЯ</div><h3 class="svc-t">Уберите работу, которая забирает ресурсы и ничего не даёт.</h3><p class="svc-d">Находим ваши самые дорогие ручные процессы и заменяем их ИИ-агентами, которые работают круглосуточно. Отчётность, онбординг, триаж поддержки, обогащение данных — автоматизировано, надёжно, масштабируемо.</p><div class="svc-u">↓ −60% операционных расходов · Первый процесс в проде через 2 недели · <a href="#audit" style="color:var(--accent);text-decoration:none;">Бесплатный аудит →</a></div></div>
+      <div class="svc"><div class="svc-n">04 — РАЗРАБОТКА ИИ-ПРОДУКТА (MLP)</div><h3 class="svc-t">От идеи до приносящего выручку продукта за недели.</h3><p class="svc-d">Мы строим Minimum Lovable Products — не wireframe-MVP. AI-native инструменты, рекомендательные движки, внутренние копилоты, клиентские продукты. Быстрый релиз и накопительный рост.</p><div class="svc-u">↓ −60% time-to-market · Исходный код включён · <a href="#audit" style="color:var(--accent);text-decoration:none;">Бесплатный аудит →</a></div></div>
+      <div class="svc"><div class="svc-n">05 — ИИ-СТРАТЕГИЯ И GROWTH-АУДИТ</div><h3 class="svc-t">Найдите самую быструю и наиболее результативную точку роста.</h3><p class="svc-d">Аудируем ваши процессы, рыночную позицию и продуктовые пробелы — чтобы понять, где живёт самый быстрый и сильный возврат. Вы получаете приоритизированный бэклог, а не презентацию.</p><div class="svc-u">Бэклог, ранжированный по ROI · Цель по метрике для каждого пункта · <a href="#audit" style="color:var(--accent);text-decoration:none;">Бесплатный аудит →</a></div></div>
+      <a class="svc" href="/on-premise-ai" style="text-decoration:none;display:block;"><div class="svc-n">06 — ON-PREMISE ИИ-СИСТЕМЫ</div><h3 class="svc-t">Ваш ИИ. Ваша инфраструктура. Ноль внешнего контакта.</h3><p class="svc-d">Большинство агентств запускают ваш ИИ в своём облаке. Мы разворачиваем на вашем сервере — данные не покидают ваш периметр. Сделано для регулируемых отраслей, корпоративных контрактов и брендов, всерьёз относящихся к суверенитету данных.</p><div class="svc-u">Полный суверенитет данных · GDPR-ready · Без cloud lock-in → Подробнее об услуге</div></a>
+    </div>
+    <div class="hl"></div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════
+     B06: WHY
+     ════════════════════════════════════════ -->
+<section class="s-lo">
+  <div class="container">
+    <div class="why-grid">
+      <div>
+        <div class="tag">Наше обязательство</div>
+        <h2 class="why-h">Senior-экспертиза.<br><span class="grad">Измеримые результаты.</span></h2>
+        <p class="why-sub">ИИ-работа enterprise-уровня по цене, которая улучшает ваш P&amp;L с момента подписания.</p>
+      </div>
+      <div>
+        <div class="why-item"><div class="why-tag">Лучшее соотношение</div><div><div class="why-title">Топовая ИИ-экспертиза. Цена рынка ЦВЕ.</div><p class="why-desc">Senior AI PM, сертифицированные практики, проверенные в бою системы — по цене, при которой ROI-кейс очевиден. Мы улучшаем ваш P&amp;L с момента подписания контракта, а не через полгода.</p></div></div>
+        <div class="why-item"><div class="why-tag">Гарантия</div><div><div class="why-title">Не устраивает? Работаем дальше — или возвращаем деньги.</div><p class="why-desc">Целевую метрику фиксируем до старта. Если не достигаем её в оговорённый срок — продолжаем работу бесплатно, пока не достигнем, либо возвращаем деньги. Никаких звёздочек. Никаких исключений.</p></div></div>
+        <div class="why-item"><div class="why-tag">MLP, а не MVP</div><div><div class="why-title">Minimum Lovable Product — а не просто Minimum Viable.</div><p class="why-desc">Мы строим продукты, к которым люди реально возвращаются. Тот же объём, та же скорость — но с таким уровнем исполнения, что пользователь открывает продукт дважды. ИИ-продукты дают накопительный ROI, только если люди действительно с ними взаимодействуют.</p></div></div>
+        <div class="why-item"><div class="why-tag">24/7 SLA</div><div><div class="why-title">Мы остаёмся. Чёткие сроки реакции. Прямой доступ к команде.</div><p class="why-desc">Мы не исчезаем после релиза. Зафиксированные SLA, прямой доступ к команде, которая собрала вашу систему, циклы постоянных улучшений и проактивный мониторинг — постоянно, а не по запросу.</p></div></div>
+        <div class="why-item"><div class="why-tag">On-Premise</div><div><div class="why-title">Ваши данные остаются на вашем сервере. Точка.</div><p class="why-desc">Разворачиваем ИИ полностью на вашей инфраструктуре — никакого стороннего облака, никакой утечки данных. Совместимо с контейнеризированными архитектурами, локальными моделями и self-hosted оркестрацией.</p></div></div>
+        <div class="why-item"><div class="why-tag">Ваша команда</div><div><div class="why-title">Мы становимся частью вашей команды. А не просто подрядчиком.</div><p class="why-desc">Мы встраиваемся в вашу команду, двигаем ваши метрики вместе с вашими людьми и остаёмся искренне вовлечёнными в успех — задолго после первой поставки. Ваш успех — наш успех. Мы не отпускаем, пока он не станет реальным.</p></div></div>
+        <div class="why-item"><div class="why-tag">White Label</div><div><div class="why-title">Ваш бренд на всём, что мы строим. Мы остаёмся невидимы.</div><p class="why-desc">Для агентств и корпораций, которым нужен невидимый AI R&amp;D-партнёр: каждый инструмент, каждая система, каждая поставка идёт под вашим именем. Ваши клиенты никогда не видят нашего названия. SLA-first, полная конфиденциальность.</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════
+     B07: PROTOCOL
+     ════════════════════════════════════════ -->
+<section id="protocol">
+  <div class="container">
+    <div class="sec-head">
+      <div class="tag">Как мы работаем</div>
+      <h2 class="sec-title">Протокол<br><span class="grad">anymetric.</span></h2>
+      <p class="sec-sub">Пять шагов. Без двусмысленностей. От вашего первого сообщения до накопительных бизнес-результатов.</p>
+    </div>
+    <div class="hl"></div>
+    <div class="proto-grid">
+      <div class="ps"><div class="ps-n">01 — AUDIT</div><h3 class="ps-t">Найти самую быструю точку выручки.</h3><p class="ps-d">Картируем процессы, рыночную позицию и пробелы по ИИ. Вы получаете чёткую картину, где ИИ даёт самый быстрый и сильный возврат — ранжировано по ROI, а не по сложности.</p></div>
+      <div class="ps"><div class="ps-n">02 — BACKLOG</div><h3 class="ps-t">Приоритизированный план, а не презентация.</h3><p class="ps-d">Каждый пункт в вашем ИИ-бэклоге имеет цель по метрике, оценку объёма и обоснование очерёдности. Вы всегда знаете, что дальше — и почему именно так.</p></div>
+      <div class="ps"><div class="ps-n">03 — DEPLOY</div><h3 class="ps-t">Собрать, протестировать, выпустить. Быстро.</h3><p class="ps-d">Разворачиваем на скорости MLP. На вашей инфраструктуре или нашей. Исходный код включён. Никакого lock-in — вы владеете всем с первого дня.</p></div>
+      <div class="ps"><div class="ps-n">04 — IMPROVE</div><h3 class="ps-t">Измерять, итерировать, наращивать.</h3><p class="ps-d">ИИ-продукты не улучшаются сами. Мы мониторим, тестируем и итерируем — наращивая ROI каждой развёрнутой системы. Чем дольше мы работаем вместе, тем лучше становится.</p></div>
+      <div class="ps"><div class="ps-n">05 — SUPPORT</div><h3 class="ps-t">Мы остаёмся. Вы растёте.</h3><p class="ps-d">Мониторинг 24/7, зафиксированный SLA, прямой доступ к команде. Обучаем вашу команду, документируем каждую систему и остаёмся вашим AI R&amp;D-партнёром — а не разовым подрядчиком.</p></div>
+    </div>
+    <div class="hl"></div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════
+     B08: PLAYBOOK
+     ════════════════════════════════════════ -->
+<section class="s-lo" id="playbook">
+  <div class="container">
+    <div class="lm-grid">
+      <div>
+        <div class="tag">Бесплатная загрузка</div>
+        <h2 style="font-size:36px;font-weight:900;line-height:1.1;margin-bottom:20px;">Product Growth<br><span class="grad">Playbook.</span></h2>
+        <p style="font-size:16px;color:var(--text-muted);line-height:1.65;margin-bottom:40px;">Фреймворки, архитектуры и стратегии, которыми наша команда двигает метрики выручки с помощью ИИ — от GEO-оптимизации до агентных систем.</p>
+        <form name="playbook-download" method="POST">
+          <input type="hidden" name="form-name" value="playbook-download">
+          <input type="hidden" name="access_key" value="0ccc9df0-0528-4fe9-81dd-a593fadfadf3">
+          <input type="hidden" name="subject" value="[anymetric/RU] Загрузка playbook">
+          <p style="display:none;"><label>Не заполняйте это поле: <input name="bot-field"></label></p>
+          <input type="email" name="email" placeholder="вы@компания.com" style="margin-bottom:20px;" required>
+          <input type="text" name="company" placeholder="Ваша компания">
+          <div style="margin-top:28px;"><button type="submit" class="btn-p" style="width:100%;" onclick="plausible('Playbook Download',{props:{form:'playbook'}})">Скачать playbook →</button></div>
+        </form>
+        <p class="form-micro" style="margin-top:12px;">Отправляем мгновенно. Никаких drip-цепочек. Только контент.</p>
+      </div>
+      <div class="lm-doc">
+        <div style="display:flex;justify-content:space-between;margin-bottom:24px;padding-bottom:16px;border-bottom:1px solid var(--hairline);">
+          <div style="font-size:14px;font-weight:700;">anymetric — PRODUCT GROWTH PLAYBOOK</div>
+          <div style="font-size:10px;color:var(--accent);font-weight:700;letter-spacing:.15em;">2026</div>
+        </div>
+        <ul class="lm-toc">
+          <li><strong>01.</strong> GEO-оптимизация — самый ROI-эффективный ИИ-канал в 2026</li>
+          <li><strong>02.</strong> ИИ-продуктовый менеджмент — строим ИИ-продукты, которые двигают метрики</li>
+          <li><strong>03.</strong> RAG-архитектура для бизнеса — без data science команды</li>
+          <li><strong>04.</strong> Сборка и деплой ИИ-агентов — от концепции до продакшена</li>
+          <li><strong>05.</strong> ИИ-обсервабилити — как понять, что ваш ИИ действительно работает</li>
+          <li><strong>06.</strong> ИИ-монетизация — поиск возможностей в вашей вертикали</li>
+          <li><strong>07.</strong> Мультиагентные исследовательские системы — когда и как их строить</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════
+     B09: STRATEGY CTA
+     ════════════════════════════════════════ -->
+<section class="s-mid">
+  <div class="container">
+    <div class="cta-in">
+      <div class="async-badge"><span class="async-dot"></span>ASYNC FIRST — Мы возвращаемся к вам, а не наоборот</div>
+      <div class="tag">Бесплатный стратегический аудит</div>
+      <h2 class="cta-h">Какую метрику двигать<br><span class="grad">первой?</span></h2>
+      <p class="cta-sub">Отправьте свою задачу. Мы найдём топ-3 возможности по выручке и вернёмся с приоритизированным планом в течение 48 часов. Без обязательств.</p>
+      <form class="cta-form" name="strategy-challenge" method="POST">
+        <input type="hidden" name="form-name" value="strategy-challenge">
+        <input type="hidden" name="access_key" value="0ccc9df0-0528-4fe9-81dd-a593fadfadf3">
+        <input type="hidden" name="subject" value="[anymetric/RU] Стратегическая задача">
+        <p style="display:none;"><label>Не заполняйте это поле: <input name="bot-field"></label></p>
+        <div><label class="fl">Имя</label><input type="text" name="name" placeholder="Ваше имя" required></div>
+        <div><label class="fl">Email</label><input type="email" name="email" placeholder="вы@компания.com" required></div>
+        <div><label class="fl">Компания</label><input type="text" name="company" placeholder="Ваша компания"></div>
+        <div><label class="fl">Роль</label><input type="text" name="role" placeholder="Основатель / CMO / CTO"></div>
+        <div class="full"><label class="fl">Ваша задача</label><textarea name="challenge" placeholder="Опишите метрику, которую хотите сдвинуть, узкое место, с которым столкнулись, или возможность, которая, как вам кажется, упускается."></textarea></div>
+        <div class="full" style="text-align:center;">
+          <button type="submit" class="btn-p" style="width:100%;max-width:360px;" onclick="plausible('Strategy Challenge Submit',{props:{form:'strategy-challenge'}})">Отправить задачу →</button>
+          <p class="trust" style="margin-top:14px;">Ответ от senior AI PM в течение 48 часов. Звонок — только если вы сами захотите.</p>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════
+     B10: FAQ
+     ════════════════════════════════════════ -->
+<section>
+  <div class="container">
+    <div class="faq-grid">
+      <div>
+        <div class="tag">FAQ</div>
+        <h2 class="faq-h">Вопросы,<br>которые заслуживают<br><span class="grad">настоящих ответов.</span></h2>
+        <p style="color:var(--text-muted);font-size:14px;line-height:1.65;margin-top:20px;">Сформулированы именно так, как ищут лица, принимающие решения — и как ИИ-движки цитируют ответы.</p>
+      </div>
+      <div>
+        <div class="faq-item open"><div class="faq-q">Что такое GEO-оптимизация и как она влияет на выручку?<span class="faq-tog"></span></div><div class="faq-a">GEO (Generative Engine Optimization) выстраивает контент и сигналы авторитетности вашего бренда так, чтобы ИИ-движки — ChatGPT, Perplexity, Gemini — цитировали вас в своих ответах. Посетители, пришедшие из LLM, конвертируются примерно в 2× выше стандартного органического трафика — это делает GEO-аудиторию самым конверсионным входящим источником, доступным в 2026 году.</div></div>
+        <div class="faq-item"><div class="faq-q">Что такое Minimum Lovable Product и чем он отличается от MVP?<span class="faq-tog"></span></div><div class="faq-a">Minimum Viable Product — это минимальный продукт, который технически работает. Minimum Lovable Product — это минимальный продукт, к которому люди реально возвращаются: та же задача, та же скорость, но с достаточным качеством исполнения, чтобы пользователи открывали его повторно по своей воле. ИИ-продукты дают накопительный ROI только тогда, когда люди действительно вовлекаются после первой сессии.</div></div>
+        <div class="faq-item"><div class="faq-q">Можете ли вы развернуть ИИ на наших серверах без внешнего облака?<span class="faq-tog"></span></div><div class="faq-a">Да — on-premise развёртывание входит в наш набор базовых услуг. Мы полностью разрабатываем и разворачиваем решение на вашей инфраструктуре с локальным деплоем моделей, self-hosted оркестрацией и контейнеризированной архитектурой. Ваши данные не покидают ваш контур. Подходит для регулируемых отраслей, корпоративных контрактов и брендов, для которых приватность — приоритет.</div></div>
+        <div class="faq-item"><div class="faq-q">Как работает ваша гарантия результата?<span class="faq-tog"></span></div><div class="faq-a">До начала работы мы согласовываем конкретную измеримую цель по метрике. Если мы не достигаем её в оговорённые сроки — продолжаем работу бесплатно, пока не достигнем, либо возвращаем деньги. Никаких звёздочек и исключений. Гарантия привязана к согласованной метрике, а не к объёму работ или поставке.</div></div>
+        <div class="faq-item"><div class="faq-q">Что входит в бесплатный аудит и сколько он занимает?<span class="faq-tog"></span></div><div class="faq-a">Опишите вашу задачу через форму — в течение 48 часов senior AI PM присылает персональный разбор: топ-3 возможности по выручке, кратчайший путь к первому результату и предварительную оценку объёма работ. Передаём асинхронно — если захотите обсудить, мы на связи.</div></div>
+        <div class="faq-item"><div class="faq-q">Работаете ли вы с агентствами как white-label партнёр?<span class="faq-tog"></span></div><div class="faq-a">Да. Для агентств мы работаем как полностью невидимый AI R&D-партнёр. Каждая поставка идёт под вашим брендом, ваши клиенты не видят наше имя, мы подстраиваемся под ваши стандарты коммуникации и поставки. SLA-first, полная конфиденциальность, все права на интеллектуальную собственность переходят к вам по завершении.</div></div>
+        <div class="faq-item"><div class="faq-q">Как устроена ваша модель ценообразования?<span class="faq-tog"></span></div><div class="faq-a">Стоимость рассчитывается по проекту или ретейнеру. Мы позиционируемся на уровне senior-экспертизы по ценам рынка ЦВЕ — заметно ниже западноевропейских агентств при сопоставимом качестве выхода. Бесплатный аудит даёт чёткое понимание объёма до любых финансовых обязательств.</div></div>
+        <div class="faq-item"><div class="faq-q">Сколько обычно длится проект?<span class="faq-tog"></span></div><div class="faq-a">Аудит и бэклог — 1 неделя. Первая развёрнутая автоматизация или GEO-оптимизация — 2–4 недели. Полноценный ИИ-продукт (MLP) — 4–8 недель в зависимости от объёма. On-premise развёртывание добавляет 1–2 недели на настройку инфраструктуры. Все сроки согласовываются до начала работы.</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="foot-grid">
+    <div>
+      <div style="display:flex;align-items:center;gap:7px;margin-bottom:14px;">
+        <svg width="24" height="24" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <defs><linearGradient id="gld2" x1="8" y1="92" x2="92" y2="8" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#6a4000"/><stop offset="30%" stop-color="#b87010"/><stop offset="65%" stop-color="#ffb94c"/><stop offset="100%" stop-color="#fff5cc"/></linearGradient></defs>
+          <path d="M92 8 L92 92 L8 92 C 38 92 72 58 92 8 Z" stroke="url(#gld2)" stroke-width="1.6" fill="none" stroke-linejoin="round"/>
+          <line x1="92" y1="8" x2="8"  y2="92" stroke="url(#gld2)" stroke-width="0.90" opacity="0.88"/>
+          <line x1="92" y1="8" x2="24" y2="92" stroke="url(#gld2)" stroke-width="0.75" opacity="0.75"/>
+          <line x1="92" y1="8" x2="40" y2="92" stroke="url(#gld2)" stroke-width="0.62" opacity="0.64"/>
+          <line x1="92" y1="8" x2="56" y2="92" stroke="url(#gld2)" stroke-width="0.52" opacity="0.54"/>
+          <line x1="92" y1="8" x2="72" y2="92" stroke="url(#gld2)" stroke-width="0.42" opacity="0.42"/>
+          <line x1="75" y1="24" x2="92" y2="24" stroke="url(#gld2)" stroke-width="0.68" opacity="0.65"/>
+          <line x1="63" y1="38" x2="92" y2="38" stroke="url(#gld2)" stroke-width="0.60" opacity="0.57"/>
+          <line x1="53" y1="52" x2="92" y2="52" stroke="url(#gld2)" stroke-width="0.52" opacity="0.50"/>
+          <line x1="40" y1="66" x2="92" y2="66" stroke="url(#gld2)" stroke-width="0.44" opacity="0.42"/>
+          <path d="M70 92 A22 22 0 0 0 92 70" fill="none" stroke="url(#gld2)" stroke-width="0.72" opacity="0.70"/>
+          <path d="M54 92 A38 38 0 0 0 92 54" fill="none" stroke="url(#gld2)" stroke-width="0.64" opacity="0.62"/>
+          <path d="M38 92 A54 54 0 0 0 92 38" fill="none" stroke="url(#gld2)" stroke-width="0.56" opacity="0.54"/>
+          <path d="M22 92 A70 70 0 0 0 92 22" fill="none" stroke="url(#gld2)" stroke-width="0.48" opacity="0.44"/>
+          <path d="M10 92 A83 83 0 0 0 92 10" fill="none" stroke="url(#gld2)" stroke-width="0.40" opacity="0.34"/>
+          <circle cx="92" cy="8" r="1.8" fill="#fff5cc"/>
+        </svg>
+        <span style="font-weight:300;font-size:14px;letter-spacing:0.08em;">anymetric</span>
+      </div>
+      <p class="foot-tag">Лаборатория продуктовой выручки, которая двигает<br>ваши метрики и гарантирует результат.</p>
+      <div style="margin-top:24px;display:flex;gap:12px;flex-wrap:wrap;">
+        <div class="cert">AI Product Academy</div>
+        <div class="cert">Maven</div>
+        <div class="cert">DeepLearning.AI</div>
+      </div>
+    </div>
+    <div class="foot-col"><h4>Услуги</h4><a href="/geo-aeo-optimization">GEO- и AEO-оптимизация</a><a href="#services">Голосовой ИИ-агент</a><a href="#services">Агентная автоматизация</a><a href="#services">Разработка ИИ-продукта</a><a href="#services">ИИ-аудит и стратегия</a><a href="/on-premise-ai">On-Premise ИИ</a></div>
+    <div class="foot-col"><h4>Компания</h4><a href="/results">Результаты</a><a href="#protocol">Наш подход</a><a href="#playbook">Playbook</a><a href="/white-label">White Label</a></div>
+    <div class="foot-col"><h4>Начать</h4><a href="#audit">Бесплатный аудит</a><a href="#audit">Отправить задачу</a><a href="/white-label">Запрос на White Label</a></div>
+  </div>
+  <div class="foot-bot">
+    <div class="foot-copy">© 2026 anymetric. Одержимы метриками. Конфиденциально by design.</div>
+    <div class="foot-copy">
+      <a href="javascript:void(0)" onclick="openLegal('privacy')" style="color:var(--text-muted);text-decoration:none;">Политика конфиденциальности</a>
+      &nbsp;·&nbsp;
+      <a href="javascript:void(0)" onclick="openLegal('terms')" style="color:var(--text-muted);text-decoration:none;">Условия использования</a>
+      &nbsp;·&nbsp;
+      <a href="javascript:void(0)" onclick="openLegal('cookies')" style="color:var(--text-muted);text-decoration:none;">Политика cookies</a>
+    </div>
+  </div>
+</footer>
+
+<!-- ══════════════════════════════════════════
+     WEBGL FLUID SHADER
+     ══════════════════════════════════════════ -->
+<script>
+(function(){
+  const canvas=document.getElementById('glc');
+  const gl=canvas.getContext('webgl')||canvas.getContext('experimental-webgl');
+  if(!gl){canvas.style.cssText='position:fixed;top:0;left:0;width:100%;height:100vh;z-index:0;background:radial-gradient(ellipse 80% 70% at 60% 40%,rgba(100,60,220,.18) 0%,transparent 65%),#0d1323';return;}
+
+  const VS=`attribute vec2 a;void main(){gl_Position=vec4(a,0.,1.);}`;
+  const FS=`precision highp float;
+  uniform float T;uniform vec2 R,M;
+  vec3 p3(vec3 x){return x-floor(x*(1./289.))*289.;}
+  vec2 p2(vec2 x){return x-floor(x*(1./289.))*289.;}
+  vec3 pm(vec3 x){return p3(((x*34.)+1.)*x);}
+  float sn(vec2 v){
+    const vec4 C=vec4(.211324865405187,.366025403784439,-.577350269189626,.024390243902439);
+    vec2 i=floor(v+dot(v,C.yy)),x0=v-i+dot(i,C.xx),i1=x0.x>x0.y?vec2(1.,0.):vec2(0.,1.);
+    vec4 x12=x0.xyxy+C.xxzz;x12.xy-=i1;i=p2(i);
+    vec3 p=pm(pm(i.y+vec3(0.,i1.y,1.))+i.x+vec3(0.,i1.x,1.));
+    vec3 m=max(.5-vec3(dot(x0,x0),dot(x12.xy,x12.xy),dot(x12.zw,x12.zw)),0.);
+    m=m*m;m=m*m;
+    vec3 x=2.*fract(p*C.www)-1.,h=abs(x)-.5,ox=floor(x+.5),a0=x-ox;
+    m*=1.79284291400159-.85373472095314*(a0*a0+h*h);
+    vec3 g;g.x=a0.x*x0.x+h.x*x0.y;g.yz=a0.yz*x12.xz+h.yz*x12.yw;
+    return 130.*dot(m,g);
+  }
+  float fbm(vec2 p){float v=0.,a=.5;for(int i=0;i<5;i++){v+=a*sn(p);p*=1.9;a*=.5;}return v;}
+  void main(){
+    vec2 uv=gl_FragCoord.xy/R,st=uv;st.x*=R.x/R.y;
+    float t=T*.16;
+    vec2 mo=(M/R)*2.-1.;mo.x*=R.x/R.y;
+
+    // Orb 1 — large violet bloom, center-right
+    vec2 o1=vec2(.72,.42)*(R.x/R.y);
+    o1+=vec2(fbm(st*.6+vec2(t*.5,t*.3))*.13,fbm(st*.6+vec2(t*.3,t*.6))*.11);
+    o1+=mo*.022;
+    float d1=length(st-o1);
+    float orb1=exp(-max(d1+fbm(st*1.2+vec2(t,t*.7))*.17,0.)*2.1);
+
+    // Orb 2 — secondary violet, upper-left
+    vec2 o2=vec2(.2,.3)*(R.x/R.y);
+    o2+=vec2(fbm(st*.5+vec2(1.7+t*.4,.9))*.14,fbm(st*.5+vec2(.3,1.4+t*.3))*.12);
+    float orb2=exp(-max(length(st-o2)+fbm(st+vec2(2.1,t*.8))*.14,0.)*2.9);
+
+    // Orb 3 — indigo, lower-right
+    vec2 o3=vec2(.9,.78)*(R.x/R.y);
+    o3+=vec2(fbm(st*.7+vec2(t*.6,3.1))*.10,fbm(st*.7+vec2(4.2,t*.5))*.09);
+    float orb3=exp(-max(length(st-o3)+fbm(st*.9+vec2(t*1.1,.8))*.12,0.)*3.3);
+
+    // Orb 4 — amber accent, left edge
+    vec2 o4=vec2(.04,.55)*(R.x/R.y);
+    o4+=vec2(fbm(st*.4+vec2(t*.3,2.5))*.11,fbm(st*.4+vec2(1.8,t*.4))*.10);
+    float orb4=exp(-max(length(st-o4)+fbm(st*1.1+vec2(t*.7,3.3))*.11,0.)*4.);
+
+    float haze=pow(fbm(st*.33+vec2(t*.18,t*.14))*.5+.5,2.4)*.06;
+
+    vec3 col=vec3(.051,.075,.137);
+    col+=vec3(.34,.20,.70)*orb1*.40;
+    col+=vec3(.22,.18,.72)*orb2*.29;
+    col+=vec3(.52,.10,.52)*orb3*.22;
+    col+=vec3(1.,.725,.298)*orb4*.17;
+    col+=vec3(.16,.14,.52)*haze;
+
+    float vg=uv.x*uv.y*(1.-uv.x)*(1.-uv.y);
+    col*=pow(vg*18.,.35)*.55+.45;
+    col=pow(clamp(col,0.,1.),vec3(.88));
+    gl_FragColor=vec4(col,1.);
+  }`;
+
+  function sh(t,s){const x=gl.createShader(t);gl.shaderSource(x,s);gl.compileShader(x);return x;}
+  const vs=sh(gl.VERTEX_SHADER,VS),fs=sh(gl.FRAGMENT_SHADER,FS);
+  const p=gl.createProgram();gl.attachShader(p,vs);gl.attachShader(p,fs);gl.linkProgram(p);gl.useProgram(p);
+  const buf=gl.createBuffer();gl.bindBuffer(gl.ARRAY_BUFFER,buf);
+  gl.bufferData(gl.ARRAY_BUFFER,new Float32Array([-1,-1,1,-1,-1,1,1,1]),gl.STATIC_DRAW);
+  const aP=gl.getAttribLocation(p,'a');gl.enableVertexAttribArray(aP);gl.vertexAttribPointer(aP,2,gl.FLOAT,false,0,0);
+  const uT=gl.getUniformLocation(p,'T'),uR=gl.getUniformLocation(p,'R'),uM=gl.getUniformLocation(p,'M');
+  let mx=0,my=0,W=0,H=0;
+  document.addEventListener('mousemove',e=>{mx=e.clientX;my=window.innerHeight-e.clientY;});
+  function rz(){const d=Math.min(devicePixelRatio||1,2);W=canvas.width=innerWidth*d;H=canvas.height=innerHeight*d;gl.viewport(0,0,W,H);}
+  rz();window.addEventListener('resize',rz);
+
+  // Wave animation
+  let wt=0;
+  function aw(){
+    wt+=.003;const s=Math.sin(wt),c=Math.cos(wt*.65),s2=Math.sin(wt*1.3+1.2);
+    const L=document.getElementById('wL');if(L)L.setAttribute('d',`M0 0 Q${100+s*28} ${200+c*40} 30 400 Q${-40+c*20} ${600+s2*30} ${90+s2*22} 800 Q180 900 0 1000 L0 0Z`);
+    const LL=document.getElementById('wLl');if(LL)LL.setAttribute('d',`M0 120 Q${70+s*20} ${300+c*30} 10 500 Q${-50+c*15} 700 ${70+s2*18} 850`);
+    const R=document.getElementById('wR');if(R)R.setAttribute('d',`M260 0 Q${160+c*28} ${200+s*40} 230 400 Q${300+s*20} ${600+c*30} 170 800 Q90 900 260 1000 L260 0Z`);
+    const RL=document.getElementById('wRl');if(RL)RL.setAttribute('d',`M260 120 Q${190+c*20} ${300+s*30} 250 500 Q${310+s*15} 700 190 850`);
+  }
+
+  let t0=null;
+  function frame(ts){if(!t0)t0=ts;const t=(ts-t0)*.001;gl.uniform1f(uT,t);gl.uniform2f(uR,W,H);gl.uniform2f(uM,mx*(W/innerWidth),my*(H/innerHeight));gl.drawArrays(gl.TRIANGLE_STRIP,0,4);aw();requestAnimationFrame(frame);}
+  requestAnimationFrame(frame);
+})();
+
+// Lang detect
+(function(){const l=(navigator.language||'en').split('-')[0];const s=document.getElementById('langSel');if(s&&['en','de','fr','nl','sv','fi','es','ru'].includes(l))s.value=l;})();
+
+// FAQ
+document.querySelectorAll('.faq-q').forEach(q=>{
+  q.addEventListener('click',()=>{const i=q.parentElement,o=i.classList.contains('open');document.querySelectorAll('.faq-item').forEach(x=>x.classList.remove('open'));if(!o)i.classList.add('open');});
+});
+
+// Mobile nav hamburger
+const ham=document.getElementById('navHam');
+const drawer=document.getElementById('navDrawer');
+ham.addEventListener('click',()=>{
+  const isOpen=drawer.classList.toggle('open');
+  ham.classList.toggle('open',isOpen);
+  ham.setAttribute('aria-expanded',isOpen);
+  document.body.style.overflow=isOpen?'hidden':'';
+});
+function closeDrawer(){
+  drawer.classList.remove('open');
+  ham.classList.remove('open');
+  ham.setAttribute('aria-expanded','false');
+  document.body.style.overflow='';
+}
+// Close drawer on scroll
+window.addEventListener('scroll',()=>{if(drawer.classList.contains('open'))closeDrawer();},{passive:true});
+
+// Plausible CTA click tracking (nav + hero buttons)
+document.querySelectorAll('a[href="#audit"]').forEach(el=>{
+  el.addEventListener('click',()=>{ if(typeof plausible!=='undefined') plausible('CTA Click — Free Audit'); });
+});
+document.querySelectorAll('a[href="#results"]').forEach(el=>{
+  el.addEventListener('click',()=>{ if(typeof plausible!=='undefined') plausible('CTA Click — See Results'); });
+});
+</script>
+
+<!-- ═══════════════════════════════════════
+     LEGAL MODAL
+     ═══════════════════════════════════════ -->
+<style>
+.legal-overlay {
+  display:none; position:fixed; inset:0; z-index:500;
+  background:rgba(13,19,35,0.88); backdrop-filter:blur(12px);
+  -webkit-backdrop-filter:blur(12px); overflow-y:auto; padding:40px 20px;
+}
+.legal-overlay.open { display:flex; align-items:flex-start; justify-content:center; }
+.legal-modal {
+  background:var(--navy-card); border:1px solid var(--hairline);
+  max-width:720px; width:100%; padding:48px 48px 56px;
+  position:relative; margin:auto;
+}
+.legal-close {
+  position:absolute; top:20px; right:24px;
+  background:none; border:none; color:var(--text-muted);
+  font-size:22px; cursor:pointer; line-height:1;
+}
+.legal-close:hover { color:var(--accent); }
+.legal-modal h2 { font-size:24px; font-weight:900; margin-bottom:8px; color:var(--text); }
+.legal-modal .legal-date { font-size:11px; color:var(--text-muted); letter-spacing:.1em; text-transform:uppercase; margin-bottom:32px; }
+.legal-modal h3 { font-size:14px; font-weight:700; color:var(--accent); text-transform:uppercase; letter-spacing:.12em; margin:28px 0 10px; }
+.legal-modal p, .legal-modal li { font-size:14px; color:var(--text-muted); line-height:1.75; margin-bottom:10px; }
+.legal-modal ul { padding-left:20px; }
+.legal-modal a { color:var(--accent); text-decoration:none; }
+@media(max-width:600px){ .legal-modal{ padding:32px 24px 40px; } }
+</style>
+
+<div class="legal-overlay" id="legalOverlay" role="dialog" aria-modal="true" aria-labelledby="legalTitle">
+  <div class="legal-modal" id="legalModal">
+    <button class="legal-close" onclick="closeLegal()" aria-label="Закрыть">×</button>
+    <div id="legalContent"></div>
+  </div>
+</div>
+
+<script>
+const legalDocs = {
+  privacy: `
+    <h2>Политика конфиденциальности</h2>
+    <div class="legal-date">Действует с: 1 апреля 2026</div>
+    <p>anymetric («мы», «нас») обязуется защищать ваши персональные данные в соответствии с Общим регламентом по защите данных (GDPR) и применимым законодательством о защите данных.</p>
+    <h3>1. Какие данные мы собираем</h3>
+    <p>Когда вы отправляете заявку на аудит или скачиваете наш playbook, мы собираем: ваше имя, рабочий email, название компании, должность и описание задачи, которое вы предоставляете. Мы не собираем платёжные данные, cookies или идентификаторы отслеживания сверх того, что описано ниже.</p>
+    <h3>2. Аналитика</h3>
+    <p>Сайт использует <strong>Plausible Analytics</strong> — privacy-first сервис аналитики без cookies, который не собирает персональные данные, не использует cookies и полностью соответствует GDPR. Баннер согласия не требуется. Plausible обрабатывает только агрегированные анонимизированные данные о трафике.</p>
+    <h3>3. Как мы используем ваши данные</h3>
+    <p>Данные из форм используются исключительно для подготовки и отправки вашего персонального аудита или запрошенного контента. Мы не продаём, не сдаём в аренду и не передаём ваши данные третьим лицам. Мы не добавляем вас в маркетинговые списки без явного согласия.</p>
+    <h3>4. Срок хранения</h3>
+    <p>Данные заявок хранятся 24 месяца с даты подачи или до вашего запроса об удалении — в зависимости от того, что наступит раньше.</p>
+    <h3>5. Ваши права (GDPR)</h3>
+    <p>У вас есть право в любой момент получить доступ к своим персональным данным, исправить или удалить их. Чтобы воспользоваться этими правами, напишите нам на <a href="mailto:privacy@anymetric.ai">privacy@anymetric.ai</a>.</p>
+    <h3>6. Оператор данных</h3>
+    <p>anymetric, Нови-Сад, Сербия. Контакт: <a href="mailto:privacy@anymetric.ai">privacy@anymetric.ai</a></p>
+  `,
+  terms: `
+    <h2>Условия использования</h2>
+    <div class="legal-date">Действует с: 1 апреля 2026</div>
+    <p>Заходя на anymetric.ai или заказывая наши услуги, вы соглашаетесь со следующими условиями.</p>
+    <h3>1. Услуги</h3>
+    <p>anymetric предоставляет услуги консалтинга по ИИ-продуктам, GEO-оптимизации, автоматизации и разработки ИИ-продуктов. Конкретные поставки, сроки и стоимость фиксируются в отдельных проектных соглашениях.</p>
+    <h3>2. Бесплатный аудит</h3>
+    <p>Бесплатный аудит — это диагностика без обязательств. Подача заявки на аудит не образует контракта или каких-либо обязательств для любой из сторон.</p>
+    <h3>3. Гарантия результата</h3>
+    <p>Если предложена гарантия результата, она распространяется на конкретную целевую метрику, согласованную письменно до начала работы. Условия гарантии прописываются в проектном соглашении и не распространяются на предварительные аудиты или бесплатные поставки.</p>
+    <h3>4. Интеллектуальная собственность</h3>
+    <p>Все поставки, исходный код и документация, созданные в рамках платного контракта, передаются клиенту по факту финального платежа, если иное не согласовано письменно.</p>
+    <h3>5. Конфиденциальность</h3>
+    <p>По умолчанию вся информация о клиенте конфиденциальна. Мы не упоминаем публично вашу компанию, проект или результаты без явного письменного согласия.</p>
+    <h3>6. Ограничение ответственности</h3>
+    <p>Наша ответственность ограничена суммой, уплаченной по конкретному контракту. Мы не несём ответственности за косвенные, последующие или предположительные убытки.</p>
+    <h3>7. Применимое право</h3>
+    <p>Настоящие условия регулируются законодательством Республики Сербия. Споры рассматриваются в компетентном суде Нови-Сада.</p>
+    <h3>8. Контакт</h3>
+    <p><a href="mailto:lab@anymetric.ai">lab@anymetric.ai</a></p>
+  `,
+  cookies: `
+    <h2>Политика cookies</h2>
+    <div class="legal-date">Действует с: 1 апреля 2026</div>
+    <p>anymetric.ai не использует трекинговые cookies, рекламные cookies или любые сторонние cookies, требующие согласия по GDPR или Директиве ePrivacy.</p>
+    <h3>Аналитика</h3>
+    <p>Мы используем <strong>Plausible Analytics</strong>, который работает без cookies и без сбора персональных данных. Plausible — это cookieless, privacy-first решение для аналитики. Согласие на его использование не требуется.</p>
+    <h3>Отправка форм</h3>
+    <p>Отправка форм обрабатывается через <strong>Supabase</strong>, который сохраняет ваши данные в зашифрованной базе. При отправке формы cookies не устанавливаются. Переданные данные используются исключительно для ответа на ваш запрос.</p>
+    <h3>Записи сессий</h3>
+    <p>Мы используем <strong>Microsoft Clarity</strong>, чтобы понимать, как посетители взаимодействуют с сайтом. Clarity устанавливает функциональные cookies для агрегации данных сессий; идентифицирующая личность информация не собирается. Вы можете отказаться через настройки cookies в браузере.</p>
+    <h3>Контакт</h3>
+    <p>Вопросы о работе с данными: <a href="mailto:privacy@anymetric.ai">privacy@anymetric.ai</a></p>
+  `
+};
+
+function openLegal(doc){
+  document.getElementById('legalContent').innerHTML = legalDocs[doc];
+  document.getElementById('legalOverlay').classList.add('open');
+  document.body.style.overflow='hidden';
+}
+function closeLegal(){
+  document.getElementById('legalOverlay').classList.remove('open');
+  document.body.style.overflow='';
+}
+document.getElementById('legalOverlay').addEventListener('click',function(e){
+  if(e.target===this) closeLegal();
+});
+document.addEventListener('keydown',function(e){
+  if(e.key==='Escape') closeLegal();
+});
+</script>
+<script>
+/* ════════════════════════════════════════════════
+   UNIVERSAL FORM HANDLER
+   Wires all forms to a backend endpoint.
+   Configure ONE variable below, and every form submits there.
+
+   OPTION A (Supabase - recommended, matches your stack):
+     Set FORM_ENDPOINT to your Supabase REST endpoint
+     e.g. "https://xxxx.supabase.co/rest/v1/leads"
+     + uncomment the apikey/Prefer headers below
+
+   OPTION B (Formspree - 50/mo free, zero-setup):
+     Set FORM_ENDPOINT to your Formspree URL
+     e.g. "https://formspree.io/f/xxxxxxxx"
+
+   OPTION C (Leave as-is during testing):
+     Forms show confirmation but do not persist.
+     Good for visual QA before wiring backend.
+   ════════════════════════════════════════════════ */
+
+const FORM_ENDPOINT = "https://api.web3forms.com/submit"; // ← PASTE endpoint here when ready
+
+document.querySelectorAll("form[name]").forEach(form => {
+  form.addEventListener("submit", async (e) => {
+    e.preventDefault();
+    const btn = form.querySelector("button[type=submit]");
+    const originalText = btn ? btn.textContent : "";
+    if (btn) { btn.disabled = true; btn.textContent = "ОТПРАВКА…"; }
+
+    const fd = new FormData(form);
+    fd.append("form_source", form.getAttribute("name"));
+    fd.append("submitted_at", new Date().toISOString());
+    fd.append("page", window.location.pathname);
+
+    try {
+      const res = await fetch(FORM_ENDPOINT, {
+        method: "POST",
+        body: fd
+      });
+      if (!res.ok) throw new Error("Submit failed: " + res.status);
+
+      if (typeof plausible === "function") {
+        plausible("Form Submit Success", { props: { form: form.getAttribute("name") } });
+      }
+      form.innerHTML = `<div style="padding:40px 0;text-align:center;">
+        <div style="font-size:32px;margin-bottom:16px;">✓</div>
+        <div style="font-size:18px;font-weight:700;margin-bottom:8px;">Получили. Senior AI PM ответит в течение 48 часов.</div>
+        <div style="font-size:13px;color:var(--text-muted);">Проверьте почту — на всякий случай и папку «Спам».</div>
+      </div>`;
+    } catch (err) {
+      console.error(err);
+      if (btn) { btn.disabled = false; btn.textContent = originalText; }
+      alert("Что-то пошло не так. Попробуйте ещё раз или напишите на lab@anymetric.ai");
+    }
+  });
+});
+</script>
+<script>
+(function(){
+  var sw=document.getElementById('langSw');
+  if(!sw)return;
+  document.addEventListener('click',function(e){if(!sw.contains(e.target))sw.removeAttribute('open');});
+  sw.querySelectorAll('.ls-opt:not(.ls-active)').forEach(function(a){
+    a.addEventListener('click',function(){localStorage.setItem('am_lang_chosen','manual');});
+  });
+}());
+</script>
+</body>
 </html>

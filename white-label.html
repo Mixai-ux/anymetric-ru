@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- — Favicons — -->
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#0d1323">
+<title>White Label ИИ-партнёр — anymetric</title>
+<meta name="description" content="Тихий ИИ R&D-партнёр для агентств и студий. Каждая поставка несёт ваш бренд. Ваши клиенты никогда не увидят наше имя. SLA-first, полная дискретность, IP передаётся по завершении.">
+<meta property="og:type"        content="website">
+<meta property="og:url" content="https://anymetric.ai/ru/white-label">
+<meta property="og:title"       content="White Label ИИ-партнёр — anymetric">
+<meta property="og:description" content="Ваш бренд на всём, что мы строим. Мы остаёмся невидимыми. R&D под руководством senior AI PM, delivered под вашей идентичностью — для агентств, которым нужны ИИ-возможности без найма.">
+<meta property="og:image"       content="https://anymetric.ai/og-image.png">
+<meta property="og:site_name"   content="anymetric">
+<meta name="twitter:card"       content="summary_large_image">
+<meta name="twitter:title"      content="White Label ИИ-партнёр — anymetric">
+<meta name="twitter:description" content="Ваш бренд на всём, что мы строим. Мы остаёмся невидимыми. R&D под руководством senior AI PM, delivered под вашей идентичностью — для агентств, которым нужны ИИ-возможности без найма.">
+<meta name="twitter:image"      content="https://anymetric.ai/og-image.png">
+<link rel="canonical" href="https://anymetric.ai/ru/white-label">
+<link rel="alternate" hreflang="en" href="https://anymetric.ai/white-label">
+<link rel="alternate" hreflang="de" href="https://anymetric.ai/de/white-label">
+<link rel="alternate" hreflang="ru" href="https://anymetric.ai/ru/white-label">
+<link rel="alternate" hreflang="x-default" href="https://anymetric.ai/white-label">
+<script defer data-domain="anymetric.ai" src="https://plausible.io/js/script.tagged-events.js"></script>
+
+<!-- ── Microsoft Clarity (heatmaps, session recordings) ── -->
+<!-- TODO: replace wnuy5iu5x3 after creating account at clarity.microsoft.com -->
+<script type="text/javascript">
+  (function(c,l,a,r,i,t,y){
+    c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+    t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+    y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+  })(window, document, "clarity", "script", "wnuy5iu5x3");
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "anymetric",
+      "item": "https://anymetric.ai/ru/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "White Label AI Partner",
+      "item": "https://anymetric.ai/ru/white-label"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "White Label ИИ-партнёр",
+  "provider": { "@type": "Organization", "name": "anymetric", "url": "https://anymetric.ai" },
+  "description": "Тихое ИИ R&D-партнёрство для digital-агентств, консалтингов и студий. Все поставки несут бренд-идентичность партнёра. Клиенты никогда не видят anymetric. SLA-first, полная передача IP, NDA-first контракт.",
+  "audience": { "@type": "BusinessAudience", "audienceType": "Digital-агентства, маркетинговые консалтинги, технологические студии, управленческие консалтинги" }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "inLanguage": "ru",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Как работает white label-схема?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Мы работаем как ваша тихая ИИ R&D-команда. Вы определяете объём и продаёте контракт вашему клиенту под вашим брендом. Мы его исполняем. Каждая поставка — отчёты, код, документация, презентации — производится под вашей бренд-идентичностью с вашим именем. Ваш клиент никогда не видит упоминания anymetric. Мы подписываем NDA до того, как будут переданы любые детали проекта."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Кому принадлежит интеллектуальная собственность?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Всё интеллектуальное право, созданное в ходе white label-контракта, передаётся вам по факту финального платежа. Это включает исходный код, документацию, обученные промпты, архитектуры и любые другие поставки. Мы не сохраняем никаких прав на повторное использование, ссылку или развитие работы, созданной для ваших контрактов."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Можете ли вы соответствовать стандартам коммуникации и поставки нашего агентства?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Да. Мы адаптируемся к вашим шаблонам документов, tone of voice, ритму отчётности и формату поставки. В ходе онбординга мы изучаем ваши стандартные шаблоны поставок и согласовываем наши outputs с ними до начала первого контракта. Ваши клиенты получают работу, неотличимую по формату и презентации от того, что они ожидают от вашей команды."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Каков минимальный размер контракта для white label?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Минимального количества контрактов нет — мы работаем с отдельными проектами. Однако white label-схемы работают лучше всего, когда в любой момент есть хотя бы один активный контракт, учитывая онбординг и процесс NDA. Для агентств с постоянным ИИ-спросом мы предлагаем ретейнерную схему, которая обеспечивает резервирование мощностей и приоритизацию времени ответа."
+      }
+    }
+  ]
+}
+</script>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#0d1323;--navy-lo:#111827;--navy-mid:#151b2c;--navy-card:#1e2640;--accent:#ffb94c;--accent-dim:   #e8a020;--text:#dde2f9;--text-muted:rgba(221,226,249,0.48);--text-mid:rgba(221,226,249,0.72);--on-accent:#3a2200;--hairline:rgba(255,255,255,0.07);}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{font-family:'Inter',sans-serif;background:var(--navy);color:var(--text);line-height:1.6;overflow-x:hidden;}
+.container{max-width:1200px;margin:0 auto;padding:0 48px;}
+.tag{font-size:10px;font-weight:700;letter-spacing:0.28em;color:var(--accent);text-transform:uppercase;border-bottom:1px solid rgba(255,185,76,0.4);padding-bottom:4px;display:inline-block;margin-bottom:24px;}
+.grad{background:linear-gradient(120deg,#ffb94c 0%,#ffe0a0 38%,#ffb94c 62%,#e07020 100%);background-size:200% auto;-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;animation:shimmer 5s linear infinite;}
+@keyframes shimmer{to{background-position:200% center;}}
+.hl{height:1px;background:var(--hairline);}
+.btn-p{display:inline-block;padding:15px 30px;background:var(--accent);color:var(--on-accent);font-weight:700;font-size:12px;letter-spacing:0.14em;text-transform:uppercase;text-decoration:none;border:none;cursor:pointer;transition:background .2s,transform .15s;}
+.btn-p:hover{background:var(--accent-dim);transform:translateY(-1px);}
+.btn-g{display:inline-block;padding:15px 30px;background:transparent;color:var(--text);font-weight:700;font-size:12px;letter-spacing:0.14em;text-transform:uppercase;text-decoration:none;border:1px solid rgba(221,226,249,0.25);cursor:pointer;transition:border-color .2s,color .2s;}
+.btn-g:hover{border-color:var(--accent);color:var(--accent);}
+input,textarea,select{background:transparent;color:var(--text);border:none;border-bottom:1px solid rgba(255,255,255,0.15);padding:12px 0;font-family:'Inter',sans-serif;font-size:14px;width:100%;outline:none;transition:border-color .2s;}
+input::placeholder,textarea::placeholder{color:var(--text-muted);}
+input:focus,textarea:focus,select:focus{border-color:var(--accent);}
+select option{background:var(--navy-card);color:var(--text);}
+.fl{font-size:9px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--accent);display:block;margin-bottom:6px;}
+section{padding:100px 0;position:relative;}
+.s-lo{background:var(--navy-lo);}
+.s-mid{background:var(--navy-mid);}
+
+/* NAV */
+nav{position:fixed;top:0;left:0;right:0;z-index:200;background:rgba(13,19,35,0.72);backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);border-bottom:1px solid var(--hairline);padding:0 0 0 48px;}
+.nav-in{display:flex;align-items:center;justify-content:space-between;height:64px;padding-right:48px;}
+.nav-logo{display:flex;align-items:center;gap:9px;text-decoration:none;color:var(--text);}
+.nav-wordmark{font-weight:300;font-size:16px;letter-spacing:.08em;}
+.nav-back{font-size:11px;font-weight:600;letter-spacing:.15em;text-transform:uppercase;color:var(--text-muted);text-decoration:none;transition:color .2s;}
+.nav-back::before{content:'← ';}
+.nav-back:hover{color:var(--accent);}
+.nav-hamburger{display:none;flex-direction:column;justify-content:center;gap:5px;width:36px;height:36px;background:none;border:none;cursor:pointer;padding:4px;}
+.nav-hamburger span{display:block;height:1.5px;background:var(--text-mid);border-radius:2px;transition:transform .25s,opacity .2s;}
+.nav-hamburger.open span:nth-child(1){transform:translateY(6.5px) rotate(45deg);}
+.nav-hamburger.open span:nth-child(2){opacity:0;}
+.nav-hamburger.open span:nth-child(3){transform:translateY(-6.5px) rotate(-45deg);}
+.nav-drawer{display:none;position:fixed;top:64px;left:0;right:0;background:rgba(13,19,35,0.97);backdrop-filter:blur(24px);border-bottom:1px solid var(--hairline);z-index:199;padding:24px 32px 32px;flex-direction:column;}
+.nav-drawer.open{display:flex;}
+.nav-drawer a{font-size:14px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--text-muted);text-decoration:none;padding:16px 0;border-bottom:1px solid var(--hairline);transition:color .2s;}
+.nav-drawer a:last-child{border-bottom:none;}
+.nav-drawer a:hover{color:var(--accent);}
+@keyframes fu{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:none}}
+.breadcrumb{font-size:11px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--text-muted);margin-bottom:32px;opacity:0;animation:fu .7s ease .1s forwards;}
+.breadcrumb a{color:var(--text-muted);text-decoration:none;}
+.breadcrumb span{margin:0 10px;opacity:.4;}
+
+/* HERO */
+.page-hero{padding:160px 0 100px;position:relative;overflow:hidden;}
+.page-hero::before{content:'';position:absolute;width:600px;height:500px;top:-80px;right:-60px;background:radial-gradient(ellipse,rgba(110,80,220,0.1) 0%,transparent 65%);pointer-events:none;}
+
+/* NDA BADGE */
+.nda-badge{display:inline-flex;align-items:center;gap:10px;padding:10px 20px;border:1px solid rgba(255,185,76,0.3);margin-bottom:32px;font-size:11px;font-weight:700;letter-spacing:.12em;color:var(--accent);text-transform:uppercase;opacity:0;animation:fu .9s ease .1s forwards;}
+.nda-dot{width:8px;height:8px;border-radius:50%;border:1.5px solid var(--accent);}
+
+/* HOW IT WORKS — 3-col layout */
+.how-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--hairline);}
+.how-item{background:var(--navy);padding:48px 36px;}
+.how-n{font-size:10px;font-weight:700;letter-spacing:.2em;color:var(--accent);margin-bottom:18px;}
+.how-t{font-size:20px;font-weight:800;line-height:1.2;margin-bottom:14px;}
+.how-d{font-size:14px;color:var(--text-muted);line-height:1.7;}
+
+/* WHAT WE DELIVER */
+.deliver-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--hairline);}
+.dlv-row{background:var(--navy);padding:32px 36px;display:grid;grid-template-columns:180px 1fr;gap:24px;align-items:start;}
+.dlv-row:hover{background:var(--navy-lo);}
+.dlv-svc{font-size:10px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);padding-top:3px;}
+.dlv-t{font-size:16px;font-weight:700;margin-bottom:8px;}
+.dlv-d{font-size:13px;color:var(--text-muted);line-height:1.65;}
+
+/* COMMITMENTS */
+.commit-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--hairline);}
+.commit{background:var(--navy);padding:40px 28px;}
+.commit-label{font-size:10px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);margin-bottom:14px;}
+.commit-t{font-size:17px;font-weight:800;margin-bottom:10px;line-height:1.2;}
+.commit-d{font-size:13px;color:var(--text-muted);line-height:1.65;}
+
+/* WHO THIS IS FOR */
+.fit-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;}
+.fit-col h3{font-size:14px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;margin-bottom:20px;padding-bottom:12px;border-bottom:1px solid var(--hairline);}
+.fit-col.good h3{color:#4caf50;}
+.fit-col.bad h3{color:var(--text-muted);}
+.fit-item{font-size:14px;color:var(--text-muted);padding:10px 0;border-bottom:1px solid var(--hairline);line-height:1.5;}
+.fit-item:last-child{border-bottom:none;}
+.fit-col.good .fit-item::before{content:'✓ ';color:#4caf50;font-weight:700;}
+.fit-col.bad .fit-item::before{content:'✗ ';color:rgba(221,226,249,0.25);font-weight:700;}
+
+/* PRICING SIGNAL */
+.pricing-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--hairline);}
+.price-item{background:var(--navy);padding:40px 36px;}
+.price-tier{font-size:10px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);margin-bottom:14px;}
+.price-name{font-size:20px;font-weight:800;margin-bottom:8px;}
+.price-desc{font-size:14px;color:var(--text-muted);line-height:1.65;margin-bottom:20px;}
+.price-includes{list-style:none;}
+.price-includes li{font-size:13px;color:var(--text-muted);padding:6px 0;border-bottom:1px solid var(--hairline);}
+.price-includes li:last-child{border-bottom:none;}
+.price-includes li::before{content:'→ ';color:var(--accent);}
+
+/* FAQ */
+.faq-item{border-bottom:1px solid var(--hairline);}
+.faq-q{padding:22px 0;font-size:15px;font-weight:600;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:20px;transition:color .2s;}
+.faq-q:hover,.faq-item.open .faq-q{color:var(--accent);}
+.faq-tog{font-size:22px;color:var(--accent);font-weight:300;flex-shrink:0;}
+.faq-tog::before{content:'+';}
+.faq-item.open .faq-tog::before{content:'−';}
+.faq-a{display:none;padding:0 0 22px;font-size:14px;color:var(--text-muted);line-height:1.75;}
+.faq-item.open .faq-a{display:block;}
+
+/* CTA */
+.cta-form-inline{display:grid;grid-template-columns:1fr 1fr;gap:24px 20px;max-width:620px;margin:0 auto 24px;text-align:left;}
+.cta-form-inline .full{grid-column:1/-1;}
+
+/* FOOTER */
+
+/* 2-col inline grid (replaces inline style for mobile override-ability) */
+.inline-2col { display:grid; grid-template-columns:1fr 2fr; gap:80px; align-items:start; }
+.inline-2col-even { display:grid; grid-template-columns:1fr 1fr; gap:80px; align-items:start; }
+
+@media(max-width:900px){
+  .container{padding:0 24px;}
+  .how-grid{grid-template-columns:1fr;}
+  .deliver-grid{grid-template-columns:1fr;}
+  .dlv-row{grid-template-columns:1fr;}
+  .commit-grid{grid-template-columns:1fr 1fr;}
+  .fit-grid{grid-template-columns:1fr;}
+  .pricing-grid{grid-template-columns:1fr;}
+  .cta-form-inline{grid-template-columns:1fr;}
+  .nav-back{display:none;}
+  .nav-hamburger{display:flex;}
+  }
+@media(max-width:540px){
+  .commit-grid{grid-template-columns:1fr;}
+  section{padding:72px 0;}
+}
+.cert { padding:8px 18px; border:1px solid rgba(255,255,255,0.12); font-size:11px; font-weight:600; letter-spacing:.14em; text-transform:uppercase; color:var(--text-muted); }
+/* ══════════════════════════════════════════
+   FOOTER (shared)
+   ══════════════════════════════════════════ */
+footer { background:var(--navy-mid); padding:80px 48px 40px; }
+.foot-grid { max-width:1200px; margin:0 auto; display:grid; grid-template-columns:2fr 1fr 1fr 1fr; gap:60px; margin-bottom:60px; }
+.foot-logo { font-size:16px; font-weight:900; letter-spacing:.22em; margin-bottom:14px; }
+.foot-tag { font-size:13px; color:var(--text-muted); line-height:1.65; }
+.foot-col h4 { font-size:10px; font-weight:700; letter-spacing:.2em; text-transform:uppercase; color:var(--accent); margin-bottom:20px; }
+.foot-col a { display:block; font-size:13px; color:var(--text-muted); text-decoration:none; margin-bottom:12px; transition:color .2s; }
+.foot-col a:hover { color:var(--text); }
+.foot-bot { max-width:1200px; margin:0 auto; padding-top:40px; border-top:1px solid var(--hairline); display:flex; justify-content:space-between; }
+.foot-copy { font-size:11px; color:var(--text-muted); }
+@media (max-width:820px) { .foot-grid { grid-template-columns:1fr 1fr; gap:40px; } }
+@media (max-width:480px) { .foot-grid { grid-template-columns:1fr; } .foot-bot { flex-direction:column; gap:8px; } }
+/* Legal modal */
+.legal-overlay { display:none; position:fixed; inset:0; z-index:500; background:rgba(13,19,35,0.88); backdrop-filter:blur(12px); -webkit-backdrop-filter:blur(12px); overflow-y:auto; padding:40px 20px; }
+.legal-overlay.open { display:flex; align-items:flex-start; justify-content:center; }
+.legal-modal { background:var(--navy-card); border:1px solid var(--hairline); max-width:720px; width:100%; padding:48px 48px 56px; position:relative; margin:auto; }
+.legal-close { position:absolute; top:20px; right:24px; background:none; border:none; color:var(--text-muted); font-size:22px; cursor:pointer; line-height:1; }
+.legal-close:hover { color:var(--accent); }
+.legal-modal h2 { font-size:24px; font-weight:900; margin-bottom:8px; color:var(--text); }
+.legal-modal .legal-date { font-size:11px; color:var(--text-muted); letter-spacing:.1em; text-transform:uppercase; margin-bottom:32px; }
+.legal-modal h3 { font-size:14px; font-weight:700; color:var(--accent); text-transform:uppercase; letter-spacing:.12em; margin:28px 0 10px; }
+.legal-modal p, .legal-modal li { font-size:14px; color:var(--text-muted); line-height:1.75; margin-bottom:10px; }
+.legal-modal ul { padding-left:20px; }
+.legal-modal a { color:var(--accent); text-decoration:none; }
+@media(max-width:600px){ .legal-modal{ padding:32px 24px 40px; } }
+
+/* ══════════════════════════════════════════
+   MOBILE-FIRST OVERLAY (subpage)
+   Appended to end of the style block to guarantee cascade wins.
+   ══════════════════════════════════════════ */
+html, body { max-width:100%; overflow-x:hidden; }
+
+/* Nav hamburger kicks in earlier for tablet landscape */
+@media (max-width:1024px) {
+  .nav-back { display:none !important; }
+  .nav-hamburger { display:flex !important; }
+}
+
+/* Mobile tightening ≤768px */
+@media (max-width:768px) {
+  nav { padding:0 0 0 20px !important; }
+  .nav-in { padding-right:20px !important; height:60px !important; }
+  .nav-wordmark { font-size:15px !important; }
+  .container { padding:0 20px !important; }
+  section { padding:64px 0 !important; }
+
+  /* Nav button inside right-side flex: shrink */
+  .nav-in > div:last-child { gap:16px !important; }
+  .nav-in .btn-p { font-size:10px !important; padding:10px 14px !important; }
+
+  /* Hero typography */
+  .hero { padding:110px 0 72px !important; min-height:auto !important; }
+  h1, .hero-h1 { font-size:clamp(36px, 10vw, 58px) !important; line-height:0.98 !important; }
+
+  /* All multi-column grids collapse to single column when they haven't already */
+  .inline-2col, .inline-2col-even, .why-grid, .uc-grid, .stack-grid, .process-grid, .hw-grid, .cta-form-inline,
+  .agg-grid, .cs-header, .cs-metrics, .cs-detail, .prov-grid, .method-grid,
+  .how-grid, .deliver-grid, .dlv-row, .commit-grid, .fit-grid, .pricing-grid,
+  .geo-explain, .process-steps, .deliverables-grid, .engines-grid, .signals-grid, .proof-grid {
+    grid-template-columns:1fr !important;
+  }
+
+  /* Grids that used 1px hairline background (creates subtle divider effect on desktop) —
+     on mobile, that single-column collapse plus background-gap works fine, no changes needed */
+
+  /* Footer: 2 cols at this breakpoint */
+  .foot-grid { grid-template-columns:1fr 1fr !important; gap:32px !important; }
+  footer { padding:60px 20px 32px !important; }
+  .foot-bot { flex-direction:column !important; gap:12px !important; align-items:flex-start !important; }
+}
+
+/* Small phones ≤480px */
+@media (max-width:480px) {
+  .container { padding:0 16px !important; }
+  nav { padding:0 0 0 16px !important; }
+  .nav-in { padding-right:16px !important; }
+  section { padding:56px 0 !important; }
+  h1, .hero-h1 { font-size:clamp(32px, 10.5vw, 46px) !important; }
+
+  /* Footer fully stacked */
+  .foot-grid { grid-template-columns:1fr !important; gap:24px !important; }
+  footer { padding:48px 16px 28px !important; }
+
+  /* Reduce cell paddings that were desktop-sized */
+  .pstep, .uc, .stack-item, .process-step, .hw, .cs-detail, .deliver-col,
+  .commit-col, .method-col, .how-col, .pricing-col, .fit-col {
+    padding:28px 20px !important;
+  }
+}
+
+
+.lang-sw{position:relative;}
+.lang-sw summary{list-style:none;cursor:pointer;font-size:11px;font-weight:600;
+  letter-spacing:0.13em;text-transform:uppercase;color:var(--accent);
+  padding:2px 0;line-height:1;user-select:none;}
+.lang-sw summary::-webkit-details-marker{display:none;}
+.ls-drop{position:absolute;right:0;top:calc(100% + 6px);
+  background:var(--bg-card);border:1px solid rgba(255,255,255,.12);
+  border-radius:6px;padding:4px;min-width:64px;z-index:200;}
+.ls-opt{display:block;font-size:11px;font-weight:600;letter-spacing:0.13em;
+  text-transform:uppercase;color:var(--text-muted);text-decoration:none;
+  padding:6px 10px;border-radius:4px;transition:color .15s,background .15s;}
+.ls-opt:hover{color:var(--accent);background:rgba(255,255,255,.05);}
+.ls-opt.ls-active{display:none;}
+</style>
+<script>if(!localStorage.getItem('am_lang_chosen'))localStorage.setItem('am_lang_chosen','locale');</script>
+</head>
+<body>
+
+<nav>
+  <div class="nav-in">
+    <a class="nav-logo" href="/">
+      <svg width="28" height="28" viewBox="0 0 100 100" fill="none"><defs><linearGradient id="gld" x1="8" y1="92" x2="92" y2="8" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#6a4000"/><stop offset="30%" stop-color="#b87010"/><stop offset="65%" stop-color="#ffb94c"/><stop offset="100%" stop-color="#fff5cc"/></linearGradient></defs><path d="M92 8 L92 92 L8 92 C 38 92 72 58 92 8 Z" stroke="url(#gld)" stroke-width="1.6" fill="none" stroke-linejoin="round"/><line x1="92" y1="8" x2="8" y2="92" stroke="url(#gld)" stroke-width="0.90" opacity="0.88"/><line x1="92" y1="8" x2="40" y2="92" stroke="url(#gld)" stroke-width="0.62" opacity="0.64"/><path d="M54 92 A38 38 0 0 0 92 54" fill="none" stroke="url(#gld)" stroke-width="0.64" opacity="0.62"/><circle cx="92" cy="8" r="1.8" fill="#fff5cc"/></svg>
+      <span class="nav-wordmark">anymetric</span>
+    </a>
+    <div style="display:flex;align-items:center;gap:32px;">
+      <a class="nav-back" href="/#services">Все услуги</a>
+      <a href="#enquiry" class="btn-p" style="font-size:11px;padding:12px 22px;" onclick="plausible('CTA Click — WhiteLabel Nav')">Запрос партнёрства</a>
+      <details class="lang-sw" id="langSw" role="navigation" aria-label="Language"><summary class="ls-cur" lang="ru">RU ▾</summary><div class="ls-drop"><a href="/white-label" class="ls-opt" lang="en" hreflang="en">EN</a><a href="/de/white-label" class="ls-opt" lang="de" hreflang="de">DE</a><a href="#" class="ls-opt ls-active" lang="ru" hreflang="ru">RU</a></div></details>
+      <button class="nav-hamburger" id="navHam" type="button" aria-label="Открыть меню" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</nav>
+<div class="nav-drawer" id="navDrawer">
+  <a href="/" onclick="closeDrawer()">Главная</a>
+  <a href="/#services" onclick="closeDrawer()">Услуги</a>
+  <a href="/results" onclick="closeDrawer()">Результаты</a>
+  <a href="#enquiry" onclick="closeDrawer()">Запрос партнёрства</a>
+</div>
+
+<!-- HERO -->
+<section class="page-hero">
+  <div class="container">
+    <p class="breadcrumb"><a href="/">anymetric</a><span>/</span>White Label-партнёр</p>
+    <div class="nda-badge"><div class="nda-dot"></div>NDA подписывается до первого брифа</div>
+    <div class="tag">Для агентств и студий</div>
+    <h1 style="font-size:clamp(40px,6vw,80px);font-weight:900;line-height:.96;letter-spacing:-.03em;margin-bottom:28px;opacity:0;animation:fu .9s ease .2s forwards;">
+      Ваш бренд<br>на всём,<br><span class="grad">что мы строим.</span>
+    </h1>
+    <p style="font-size:18px;color:var(--text-mid);max-width:580px;line-height:1.68;margin-bottom:44px;opacity:0;animation:fu .9s ease .35s forwards;">Мы — ваша тихая ИИ R&amp;D-команда. Вы владеете отношениями с клиентом и поставками. Мы обеспечиваем компетенцию senior AI PM, разработку и результаты — невидимо, под вашим именем.</p>
+    <div style="display:flex;gap:16px;flex-wrap:wrap;opacity:0;animation:fu .9s ease .5s forwards;">
+      <a href="#enquiry" class="btn-p" onclick="plausible('CTA Click — WhiteLabel Hero')">Начать запрос партнёрства →</a>
+      <a href="#how-it-works" class="btn-g">КАК ЭТО РАБОТАЕТ</a>
+    </div>
+  </div>
+</section>
+
+<!-- THE PROBLEM -->
+<section class="s-lo">
+  <div class="container">
+    <div class="inline-2col-even">
+      <div>
+        <div class="tag">Проблема агентства</div>
+        <h2 style="font-size:clamp(26px,3vw,42px);font-weight:900;line-height:1.1;margin-bottom:20px;">Ваши клиенты спрашивают<br>про ИИ. Ваша команда<br><span class="grad">не укомплектована для этого.</span></h2>
+        <p style="font-size:15px;color:var(--text-muted);line-height:1.75;margin-bottom:14px;">Каждое digital-агентство, консалтинг и студия слышат от клиентов одно и то же в 2026 году: <em style="color:var(--text-mid);">«Какова ваша ИИ-стратегия? Что вы можете сделать с ИИ для нас?»</em></p>
+        <p style="font-size:15px;color:var(--text-muted);line-height:1.75;margin-bottom:14px;">Агентства, которые отвечают хорошо, удерживают ретейнеры и выигрывают новый бизнес. Те, кто уходит от ответа, теряют и то и другое. Но построение внутренней AI PM-компетенции — сертифицированные практики, актуальные инструменты, продакшн-опыт — требует времени, которого у вас нет, и бюджета на headcount, который, возможно, не утверждён.</p>
+        <p style="font-size:15px;color:var(--text-muted);line-height:1.75;">Именно этот пробел мы заполняем. Невидимо.</p>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:2px;">
+        <div style="background:var(--navy-card);border:1px solid var(--hairline);padding:24px 28px;">
+          <div style="font-size:11px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--accent);margin-bottom:10px;">Типичный пробел</div>
+          <p style="font-size:14px;color:var(--text-muted);line-height:1.7;">Клиент просит ИИ-движок рекомендаций, GEO-аудит или on-premise ИИ-систему. У вас есть доверие клиента и инфраструктура управления проектами. У вас нет глубины AI engineering и PM-экспертизы для уверенной поставки на senior-уровне.</p>
+        </div>
+        <div style="background:var(--navy-card);border:1px solid var(--hairline);padding:24px 28px;">
+          <div style="font-size:11px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:#4caf50;margin-bottom:10px;">White label-ответ</div>
+          <p style="font-size:14px;color:var(--text-muted);line-height:1.7;">Вы определяете объём и продаёте контракт. Мы проектируем и поставляем. Ваш клиент получает работу под вашим брендом, в ваших шаблонах документов, с вашим именем на финальном деке. Мы — engineering и PM-слой, который вам был нужен: по запросу, по стоимости проекта, а не headcount.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section id="how-it-works">
+  <div class="container">
+    <div style="margin-bottom:56px;">
+      <div class="tag">Как это работает</div>
+      <h2 style="font-size:clamp(26px,3vw,40px);font-weight:900;line-height:1.1;">Три шага.<br><span class="grad">Ваш клиент никогда не узнает.</span></h2>
+    </div>
+    <div class="hl" style="margin-bottom:0;"></div>
+    <div class="how-grid">
+      <div class="how-item">
+        <div class="how-n">01 — NDA И ОНБОРДИНГ</div>
+        <div class="how-t">Сначала подписываем. Потом брифинг.</div>
+        <p class="how-d">Взаимная NDA подписывается до того, как будут переданы любые детали проекта. Мы изучаем ваши стандартные шаблоны поставок, гайдлайны бренда, tone of voice и стандарты коммуникации с клиентом. Согласование происходит один раз — затем каждый контракт проходит бесшовно.</p>
+      </div>
+      <div class="how-item" style="background:var(--navy-lo);">
+        <div class="how-n">02 — ПОСТАВКА</div>
+        <div class="how-t">Мы строим. Вы презентуете.</div>
+        <p class="how-d">Каждая поставка — стратегические документы, аудиты, код, дашборды, презентации — производится под вашей бренд-идентичностью. Мы коммуницируем с вами, а не с вашим клиентом. Статусные обновления, вопросы, изменения scope — всё идёт через вас. Ваш клиент видит только вашу команду, которая поставляет.</p>
+      </div>
+      <div class="how-item">
+        <div class="how-n">03 — ПЕРЕДАЧА</div>
+        <div class="how-t">IP передан. Контракт закрыт.</div>
+        <p class="how-d">По завершении всё интеллектуальное право полностью передаётся вам: исходный код, документация, обученные промпты, архитектурные активы. Мы не оставляем ничего. Никакой текущей зависимости, никаких лицензионных сборов, никакого lock-in. Вы владеете всем, что мы построили — навсегда.</p>
+      </div>
+    </div>
+    <div class="hl" style="margin-top:0;"></div>
+  </div>
+</section>
+
+<!-- WHAT WE DELIVER -->
+<section class="s-lo">
+  <div class="container">
+    <div style="margin-bottom:56px;">
+      <div class="tag">Объём работ</div>
+      <h2 style="font-size:clamp(26px,3vw,40px);font-weight:900;line-height:1.1;">Всё, что мы строим —<br><span class="grad">под вашим именем.</span></h2>
+      <p style="font-size:15px;color:var(--text-muted);margin-top:14px;max-width:500px;">Все шесть типов услуг anymetric доступны для white label поставки. Полные возможности — под вашим брендом.</p>
+    </div>
+    <div class="deliver-grid">
+      <div class="dlv-row">
+        <div class="dlv-svc">GEO- и AEO-оптимизация</div>
+        <div><div class="dlv-t">Аудиты видимости в ИИ-движках и внедрение</div><p class="dlv-d">Citation-аудит, Q&amp;A-архитектура контента, разметка Schema.org, построение авторитета сущности, дашборд citation-трекинга. Поставляется как ИИ-поисковая компетенция вашего агентства.</p></div>
+      </div>
+      <div class="dlv-row">
+        <div class="dlv-svc">Голосовые ИИ-агенты</div>
+        <div><div class="dlv-t">Inbound-квалификация и обработка голосового ИИ</div><p class="dlv-d">Кастомная голосовая идентичность, flows обработки звонков, CRM-интеграция, white-label голосовая персона. Ваш клиент слышит ИИ-решение вашего агентства — не наше.</p></div>
+      </div>
+      <div class="dlv-row">
+        <div class="dlv-svc">Агентная автоматизация</div>
+        <div><div class="dlv-t">Автоматизация воркфлоу и операционные ИИ-пайплайны</div><p class="dlv-d">Многошаговые агентные пайплайны для отчётности, онбординга, триажа поддержки, обогащения данных. Исходный код передаётся — инфраструктура клиента, поставка вашего агентства.</p></div>
+      </div>
+      <div class="dlv-row">
+        <div class="dlv-svc">Разработка ИИ-продукта</div>
+        <div><div class="dlv-t">Разработка Minimum Lovable Product</div><p class="dlv-d">Full-stack разработка ИИ-продуктов: движки рекомендаций, внутренние copilot, клиентские ИИ-инструменты. Поставляется как компетенция разработки продукта вашего агентства.</p></div>
+      </div>
+      <div class="dlv-row">
+        <div class="dlv-svc">ИИ-стратегия и аудит</div>
+        <div><div class="dlv-t">Оценка ИИ-возможностей и приоритизированные бэклоги</div><p class="dlv-d">Аудиты воркфлоу, скоринг ИИ-возможностей, ROI-ранжированный бэклог с целевыми метриками. Поставляется в вашем шаблоне документа с фреймингом рекомендаций вашего агентства.</p></div>
+      </div>
+      <div class="dlv-row">
+        <div class="dlv-svc">On-Premise-ИИ</div>
+        <div><div class="dlv-t">Локальный деплой ИИ для регулируемых клиентов</div><p class="dlv-d">Полная on-premise ИИ-архитектура, деплой модели, RAG-пайплайн, документация и обучение команды. Решение вашего агентства по суверенитету данных для клиентов с требованиями комплаенса.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- OUR COMMITMENTS -->
+<section>
+  <div class="container">
+    <div style="margin-bottom:56px;">
+      <div class="tag">Наши обязательства перед вами</div>
+      <h2 style="font-size:clamp(26px,3vw,40px);font-weight:900;line-height:1.1;">Что мы гарантируем<br><span class="grad">по каждому контракту.</span></h2>
+    </div>
+    <div class="hl" style="margin-bottom:0;"></div>
+    <div class="commit-grid">
+      <div class="commit">
+        <div class="commit-label">Невидимость</div>
+        <div class="commit-t">Ваш клиент никогда не видит нашего имени.</div>
+        <p class="commit-d">Никакого anymetric-брендинга, водяных знаков или ссылок ни в одной поставке. Шапки документов, подвалы, email-домены и каналы коммуникации — всё отражает идентичность вашего агентства.</p>
+      </div>
+      <div class="commit" style="background:var(--navy-lo);">
+        <div class="commit-label">Дискретность</div>
+        <div class="commit-t">Мы не упоминаем вас без согласия.</div>
+        <p class="commit-d">Мы не называем наших white label-партнёров публично, в кейсах или в продажных материалах. Использование нашей компетенции вашим агентством остаётся конфиденциальным на ваше усмотрение.</p>
+      </div>
+      <div class="commit">
+        <div class="commit-label">Передача IP</div>
+        <div class="commit-t">Всё, что мы строим — ваше.</div>
+        <p class="commit-d">Полный исходный код, документация, обученные активы и архитектурный IP передаются вам по завершении. Мы сохраняем ноль прав на повторное использование или ссылку на работу.</p>
+      </div>
+      <div class="commit" style="background:var(--navy-lo);">
+        <div class="commit-label">SLA-First</div>
+        <div class="commit-t">Определённые сроки ответа. Прямой доступ.</div>
+        <p class="commit-d">White label-партнёры получают приоритетное SLA-обслуживание: определённые окна ответа, прямой доступ к senior PM на вашем аккаунте и проактивные статусные обновления без напоминаний.</p>
+      </div>
+    </div>
+    <div class="hl" style="margin-top:0;"></div>
+  </div>
+</section>
+
+<!-- WHO THIS IS FOR -->
+<section class="s-lo">
+  <div class="container">
+    <div style="margin-bottom:56px;">
+      <div class="tag">Соответствие</div>
+      <h2 style="font-size:clamp(26px,3vw,40px);font-weight:900;line-height:1.1;">Для кого это работает.<br><span class="grad">Для кого — нет.</span></h2>
+      <p style="font-size:15px;color:var(--text-muted);margin-top:14px;max-width:480px;">Мы хорошо работаем как white label-партнёр, когда есть чёткая клиентская связь, которую нужно защитить, и реальный пробел ИИ-компетенции, который нужно заполнить.</p>
+    </div>
+    <div class="fit-grid">
+      <div class="fit-col good">
+        <h3>Подходит</h3>
+        <div class="fit-item">Digital-агентства с устоявшимися клиентскими отношениями и без внутренней AI PM-компетенции</div>
+        <div class="fit-item">Маркетинговые консалтинги, чьи клиенты запрашивают GEO и ИИ-стратегию поиска</div>
+        <div class="fit-item">Технологические студии, которые строят продукты, но нуждаются в глубине AI engineering по запросу</div>
+        <div class="fit-item">Управленческие консалтинги, добавляющие ИИ-трансформацию в свой портфель услуг</div>
+        <div class="fit-item">Бутик-агентства с одним-двумя крупными клиентами, требующими ИИ-работу, выходящую за рамки возможностей текущей команды</div>
+        <div class="fit-item">Студии, которые хотят предлагать on-premise ИИ регулируемым клиентам без найма для этого</div>
+      </div>
+      <div class="fit-col bad">
+        <h3>Не подходит</h3>
+        <div class="fit-item">Компании, желающие перепродавать наши услуги без активного клиентского контракта</div>
+        <div class="fit-item">Агентства, ожидающие типовой ИИ-продукт, который они могут подавать как собственный IP без NDA</div>
+        <div class="fit-item">Партнёры, которые не могут гарантировать маршрутизацию всей клиентской коммуникации через единую точку контакта</div>
+        <div class="fit-item">Контракты, где конечный клиент ожидает раскрытия именованного субподрядчика</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING SIGNAL -->
+<section>
+  <div class="container">
+    <div style="margin-bottom:56px;">
+      <div class="tag">Структура ценообразования</div>
+      <h2 style="font-size:clamp(26px,3vw,40px);font-weight:900;line-height:1.1;">Стоимость проекта.<br><span class="grad">Не стоимость headcount.</span></h2>
+      <p style="font-size:15px;color:var(--text-muted);margin-top:14px;max-width:500px;">White label оценивается per project или per retainer. Маржа — ваше дело. Мы ценим по вашему оптовому тарифу. Вы добавляете наценку, отражающую ваши клиентские отношения и account management.</p>
+    </div>
+    <div class="pricing-grid">
+      <div class="price-item">
+        <div class="price-tier">Проектный</div>
+        <div class="price-name">Поставка per engagement</div>
+        <p class="price-desc">Объём, цена и поставка — per client engagement. Полный гонорар за проект согласуется заранее. Подходит для агентств с эпизодическим спросом на ИИ или работой проект за проектом.</p>
+        <ul class="price-includes">
+          <li>Объём определяется до любых обязательств</li>
+          <li>Фиксированный гонорар за поставку</li>
+          <li>NDA + передача IP включены</li>
+          <li>Ретейнер не требуется</li>
+        </ul>
+      </div>
+      <div class="price-item" style="background:var(--navy-lo);">
+        <div class="price-tier">Ретейнерный</div>
+        <div class="price-name">Reserved Capacity-схема</div>
+        <p class="price-desc">Фиксированный месячный ретейнер резервирует определённое число дней senior AI PM в месяц. Приоритетный SLA, более быстрый turnaround и выделенный account management. Подходит для агентств с постоянным или повторяющимся ИИ-спросом клиентов.</p>
+        <ul class="price-includes">
+          <li>Зарезервированных дней в месяц</li>
+          <li>Priority-очередь — ваша работа идёт первой</li>
+          <li>Выделенный senior PM на вашем аккаунте</li>
+          <li>Перенос неиспользованных дней (с ограничением)</li>
+        </ul>
+      </div>
+    </div>
+    <p style="font-size:13px;color:var(--text-muted);margin-top:20px;">Оптовые тарифы обсуждаются в ходе партнёрского запроса — после NDA. Ставки структурированы так, чтобы стандартная агентская наценка (2–3×) давала конкурентное ценообразование для клиентов на вашем рынке.</p>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="s-lo">
+  <div class="container">
+    <div class="inline-2col">
+      <div>
+        <div class="tag">FAQ</div>
+        <h2 style="font-size:28px;font-weight:900;line-height:1.1;position:sticky;top:100px;">Партнёр-<br><span class="grad">Вопросы.</span></h2>
+      </div>
+      <div>
+        <div class="faq-item open">
+          <div class="faq-q">Как работает white label-схема?<span class="faq-tog"></span></div>
+          <div class="faq-a">Мы работаем как ваша тихая ИИ R&amp;D-команда. Вы определяете объём и продаёте контракт вашему клиенту под вашим брендом. Мы его исполняем. Каждая поставка — отчёты, код, документация, презентации — производится под вашей бренд-идентичностью с вашим именем. Ваш клиент никогда не видит упоминания anymetric. Мы подписываем NDA до того, как будут переданы любые детали проекта.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">Кому принадлежит интеллектуальная собственность?<span class="faq-tog"></span></div>
+          <div class="faq-a">Всё интеллектуальное право, созданное в ходе white label-контракта, передаётся вам по факту финального платежа. Это включает исходный код, документацию, обученные промпты, архитектуры и любые другие поставки. Мы не сохраняем никаких прав на повторное использование, ссылку или развитие работы, созданной для ваших контрактов.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">Можете ли вы соответствовать стандартам коммуникации и поставки нашего агентства?<span class="faq-tog"></span></div>
+          <div class="faq-a">Да. Мы адаптируемся к вашим шаблонам документов, tone of voice, ритму отчётности и формату поставки. В ходе онбординга мы изучаем ваши стандартные шаблоны поставок и согласовываем наши outputs с ними до начала первого контракта. Ваши клиенты получают работу, неотличимую по формату и презентации от того, что они ожидают от вашей команды.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">Каков минимальный размер контракта для white label?<span class="faq-tog"></span></div>
+          <div class="faq-a">Минимального количества контрактов нет — мы работаем с отдельными проектами. Однако white label-схемы работают лучше всего, когда в любой момент есть хотя бы один активный контракт, учитывая онбординг и процесс NDA. Для агентств с постоянным ИИ-спросом мы предлагаем ретейнерную схему, которая резервирует мощности и приоритизирует вашу работу.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">Как вы управляете коммуникацией с нашими клиентами в ходе поставки?<span class="faq-tog"></span></div>
+          <div class="faq-a">Мы никогда не коммуницируем напрямую с вашими клиентами. Все вопросы, обновления и поставки идут через вас как единую точку контакта. Мы согласовываемся с вашим предпочтительным ритмом коммуникации — еженедельные обновления, асинхронный Slack-канал или формальные статусные отчёты — а вы представляете всё вашему клиенту в вашем голосе.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="s-mid" id="enquiry">
+  <div class="container">
+    <div style="text-align:center;max-width:680px;margin:0 auto;">
+      <div class="nda-badge" style="opacity:1;animation:none;margin-bottom:32px;"><div class="nda-dot"></div>NDA подписывается до первого брифа. Всегда.</div>
+      <div class="tag">Начать партнёрство</div>
+      <h2 style="font-size:clamp(28px,4vw,52px);font-weight:900;line-height:1.05;margin-bottom:18px;">Расскажите нам о<br><span class="grad">вашем клиентском пробеле.</span></h2>
+      <p style="font-size:17px;color:var(--text-muted);line-height:1.65;margin-bottom:40px;">Опишите, какой тип ИИ-работы запрашивают ваши клиенты. Мы подтвердим соответствие и пришлём обзор для партнёров и лист оптовых тарифов — после NDA.</p>
+      <form class="cta-form-inline" name="white-label-enquiry" method="POST">
+        <input type="hidden" name="form-name" value="white-label-enquiry">
+        <input type="hidden" name="access_key" value="0ccc9df0-0528-4fe9-81dd-a593fadfadf3">
+        <input type="hidden" name="subject" value="[anymetric] White Label Enquiry">
+        <p style="display:none;"><label>Не заполняйте это: <input name="bot-field"></label></p>
+        <div><label class="fl">Ваше имя</label><input type="text" name="name" placeholder="Ваше имя" required></div>
+        <div><label class="fl">Рабочий e-mail</label><input type="email" name="email" placeholder="vy@agency.com" required></div>
+        <div><label class="fl">Название агентства / студии</label><input type="text" name="agency" placeholder="Название вашего агентства"></div>
+        <div><label class="fl">Размер агентства</label>
+          <select name="size">
+            <option value="">Выберите размер команды…</option>
+            <option>1–5 человек</option>
+            <option>6–20 человек</option>
+            <option>21–50 человек</option>
+            <option>50+ человек</option>
+          </select>
+        </div>
+        <div class="full">
+          <label class="fl">Какую ИИ-работу запрашивают ваши клиенты?</label>
+          <textarea name="demand" rows="3" placeholder="Например: несколько наших e-commerce клиентов запрашивают ИИ-персонализацию и GEO-оптимизацию. У нас есть PM и стратегический слой, но нет глубины AI engineering." style="min-height:80px;"></textarea>
+        </div>
+        <div class="full" style="text-align:center;">
+          <button type="submit" class="btn-p" style="width:100%;max-width:360px;" onclick="plausible('White Label Enquiry Submit')">ОТПРАВИТЬ ПАРТНЁРСКИЙ ЗАПРОС →</button>
+          <p style="font-size:12px;color:var(--text-muted);margin-top:12px;">Отвечаем в течение 48 часов: NDA и обзор для партнёров. Без обязательств.</p>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<style>@keyframes pulse{0%,100%{opacity:.6;transform:scale(1)}50%{opacity:1;transform:scale(1.2)}}</style>
+<script>
+document.querySelectorAll('.faq-q').forEach(q=>{
+  q.addEventListener('click',()=>{
+    const i=q.parentElement,o=i.classList.contains('open');
+    document.querySelectorAll('.faq-item').forEach(x=>x.classList.remove('open'));
+    if(!o)i.classList.add('open');
+  });
+});
+const ham=document.getElementById('navHam');
+const drawer=document.getElementById('navDrawer');
+ham.addEventListener('click',()=>{
+  const open=drawer.classList.toggle('open');
+  ham.classList.toggle('open',open);
+  ham.setAttribute('aria-expanded',open);
+  document.body.style.overflow=open?'hidden':'';
+});
+function closeDrawer(){
+  drawer.classList.remove('open');
+  ham.classList.remove('open');
+  ham.setAttribute('aria-expanded','false');
+  document.body.style.overflow='';
+}
+window.addEventListener('scroll',()=>{if(drawer.classList.contains('open'))closeDrawer();},{passive:true});
+document.querySelectorAll('a[href^="#"]').forEach(a=>{
+  a.addEventListener('click',e=>{
+    const t=document.querySelector(a.getAttribute('href'));
+    if(t){e.preventDefault();t.scrollIntoView({behavior:'smooth',block:'start'});}
+  });
+});
+</script>
+<script>
+/* ════════════════════════════════════════════════
+   UNIVERSAL FORM HANDLER
+   Wires all forms to a backend endpoint.
+   Configure ONE variable below, and every form submits there.
+
+   OPTION A (Supabase - recommended, matches your stack):
+     Set FORM_ENDPOINT to your Supabase REST endpoint
+     e.g. "https://xxxx.supabase.co/rest/v1/leads"
+     + uncomment the apikey/Prefer headers below
+
+   OPTION B (Formspree - 50/mo free, zero-setup):
+     Set FORM_ENDPOINT to your Formspree URL
+     e.g. "https://formspree.io/f/xxxxxxxx"
+
+   OPTION C (Leave as-is during testing):
+     Forms show confirmation but do not persist.
+     Good for visual QA before wiring backend.
+   ════════════════════════════════════════════════ */
+
+const FORM_ENDPOINT = "https://api.web3forms.com/submit"; // ← PASTE endpoint here when ready
+
+document.querySelectorAll("form[name]").forEach(form => {
+  form.addEventListener("submit", async (e) => {
+    e.preventDefault();
+    const btn = form.querySelector("button[type=submit]");
+    const originalText = btn ? btn.textContent : "";
+    if (btn) { btn.disabled = true; btn.textContent = "ОТПРАВКА…"; }
+
+    const fd = new FormData(form);
+    fd.append("form_source", form.getAttribute("name"));
+    fd.append("submitted_at", new Date().toISOString());
+    fd.append("page", window.location.pathname);
+
+    try {
+      const res = await fetch(FORM_ENDPOINT, {
+        method: "POST",
+        body: fd
+      });
+      if (!res.ok) throw new Error("Submit failed: " + res.status);
+
+      if (typeof plausible === "function") {
+        plausible("Form Submit Success", { props: { form: form.getAttribute("name") } });
+      }
+      form.innerHTML = `<div style="padding:40px 0;text-align:center;">
+        <div style="font-size:32px;margin-bottom:16px;">✓</div>
+        <div style="font-size:18px;font-weight:700;margin-bottom:8px;">Получили. Senior AI PM ответит в течение 48 часов.</div>
+        <div style="font-size:13px;color:var(--text-muted);">Проверьте почту — на всякий случай и папку «Спам».</div>
+      </div>`;
+    } catch (err) {
+      console.error(err);
+      if (btn) { btn.disabled = false; btn.textContent = originalText; }
+      alert("Что-то пошло не так. Попробуйте ещё раз или напишите на lab@anymetric.ai");
+    }
+  });
+});
+</script>
+<!-- FOOTER (shared across all pages) -->
+<footer>
+  <div class="foot-grid">
+    <div>
+      <div style="display:flex;align-items:center;gap:7px;margin-bottom:14px;">
+        <svg width="24" height="24" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <defs><linearGradient id="gldFoot" x1="8" y1="92" x2="92" y2="8" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#6a4000"/><stop offset="30%" stop-color="#b87010"/><stop offset="65%" stop-color="#ffb94c"/><stop offset="100%" stop-color="#fff5cc"/></linearGradient></defs>
+          <path d="M92 8 L92 92 L8 92 C 38 92 72 58 92 8 Z" stroke="url(#gldFoot)" stroke-width="1.6" fill="none" stroke-linejoin="round"/>
+          <line x1="92" y1="8" x2="8"  y2="92" stroke="url(#gldFoot)" stroke-width="0.90" opacity="0.88"/>
+          <line x1="92" y1="8" x2="24" y2="92" stroke="url(#gldFoot)" stroke-width="0.75" opacity="0.75"/>
+          <line x1="92" y1="8" x2="40" y2="92" stroke="url(#gldFoot)" stroke-width="0.62" opacity="0.64"/>
+          <line x1="92" y1="8" x2="56" y2="92" stroke="url(#gldFoot)" stroke-width="0.52" opacity="0.54"/>
+          <line x1="92" y1="8" x2="72" y2="92" stroke="url(#gldFoot)" stroke-width="0.42" opacity="0.42"/>
+          <line x1="75" y1="24" x2="92" y2="24" stroke="url(#gldFoot)" stroke-width="0.68" opacity="0.65"/>
+          <line x1="63" y1="38" x2="92" y2="38" stroke="url(#gldFoot)" stroke-width="0.60" opacity="0.57"/>
+          <line x1="53" y1="52" x2="92" y2="52" stroke="url(#gldFoot)" stroke-width="0.52" opacity="0.50"/>
+          <line x1="40" y1="66" x2="92" y2="66" stroke="url(#gldFoot)" stroke-width="0.44" opacity="0.42"/>
+          <path d="M70 92 A22 22 0 0 0 92 70" fill="none" stroke="url(#gldFoot)" stroke-width="0.72" opacity="0.70"/>
+          <path d="M54 92 A38 38 0 0 0 92 54" fill="none" stroke="url(#gldFoot)" stroke-width="0.64" opacity="0.62"/>
+          <path d="M38 92 A54 54 0 0 0 92 38" fill="none" stroke="url(#gldFoot)" stroke-width="0.56" opacity="0.54"/>
+          <path d="M22 92 A70 70 0 0 0 92 22" fill="none" stroke="url(#gldFoot)" stroke-width="0.48" opacity="0.44"/>
+          <path d="M10 92 A83 83 0 0 0 92 10" fill="none" stroke="url(#gldFoot)" stroke-width="0.40" opacity="0.34"/>
+          <circle cx="92" cy="8" r="1.8" fill="#fff5cc"/>
+        </svg>
+        <span style="font-weight:300;font-size:14px;letter-spacing:0.08em;">anymetric</span>
+      </div>
+      <p class="foot-tag">Лаборатория продуктовой выручки,<br>которая двигает метрики и гарантирует результат.</p>
+      <div style="margin-top:24px;display:flex;gap:12px;flex-wrap:wrap;">
+        <div class="cert">AI Product Academy</div>
+        <div class="cert">Maven</div>
+        <div class="cert">DeepLearning.AI</div>
+      </div>
+    </div>
+    <div class="foot-col"><h4>Услуги</h4><a href="/geo-aeo-optimization">GEO- и AEO-оптимизация</a><a href="/#services">Голосовой ИИ-агент</a><a href="/#services">Агентная автоматизация</a><a href="/#services">Разработка ИИ-продукта</a><a href="/#services">ИИ-аудит и стратегия</a><a href="/on-premise-ai">On-Premise-ИИ</a></div>
+    <div class="foot-col"><h4>Компания</h4><a href="/results">Результаты</a><a href="/#protocol">Наш подход</a><a href="/#playbook">Playbook</a><a href="/white-label">White Label</a></div>
+    <div class="foot-col"><h4>Старт</h4><a href="/#audit">Бесплатный аудит</a><a href="/#audit">Описать задачу</a><a href="/white-label">White-Label-запрос</a></div>
+  </div>
+  <div class="foot-bot">
+    <div class="foot-copy">© 2026 anymetric. Одержимы метриками. Конфиденциальность by design.</div>
+    <div class="foot-copy">
+      <a href="javascript:void(0)" onclick="openLegal('privacy')" style="color:var(--text-muted);text-decoration:none;">Конфиденциальность</a>
+      &nbsp;·&nbsp;
+      <a href="javascript:void(0)" onclick="openLegal('terms')" style="color:var(--text-muted);text-decoration:none;">Условия использования</a>
+      &nbsp;·&nbsp;
+      <a href="javascript:void(0)" onclick="openLegal('cookies')" style="color:var(--text-muted);text-decoration:none;">Политика cookies</a>
+    </div>
+  </div>
+</footer>
+
+<!-- LEGAL MODAL -->
+<div class="legal-overlay" id="legalOverlay" role="dialog" aria-modal="true" aria-labelledby="legalTitle">
+  <div class="legal-modal" id="legalModal">
+    <button class="legal-close" onclick="closeLegal()" aria-label="Close">×</button>
+    <div id="legalContent"></div>
+  </div>
+</div>
+
+<script>
+const legalDocs = {
+  privacy: `
+    <h2>Политика конфиденциальности</h2>
+    <div class="legal-date">Дата вступления в силу: 1 апреля 2026</div>
+    <p>anymetric («мы», «нас», «наш») стремится защищать ваши персональные данные в соответствии с Общим регламентом по защите данных (GDPR) и применимым законодательством о защите данных.</p>
+    <h3>1. Какие данные мы собираем</h3>
+    <p>Когда вы отправляете заявку на аудит или скачиваете наш playbook, мы собираем: ваше имя, рабочий e-mail, название компании, должность и описание задачи, которое вы предоставляете. Мы не собираем платёжные данные, cookies или трекинговые идентификаторы помимо описанных ниже.</p>
+    <h3>2. Аналитика</h3>
+    <p>Этот сайт использует <strong>Plausible Analytics</strong> — privacy-first сервис аналитики без cookies, который не собирает персональные данные, не использует cookies и полностью соответствует GDPR. Баннер согласия не требуется. Plausible обрабатывает только агрегированные, анонимизированные данные трафика.</p>
+    <h3>3. Как мы используем ваши данные</h3>
+    <p>Данные форм используются исключительно для подготовки и предоставления вашего персонализированного аудита или запрошенного контента. Мы не продаём, не сдаём в аренду и не передаём ваши данные третьим лицам. Мы не добавляем вас в маркетинговые рассылки без явного согласия.</p>
+    <h3>4. Сроки хранения</h3>
+    <p>Данные заявки хранятся 24 месяца с даты подачи или до момента запроса удаления — что наступит раньше.</p>
+    <h3>5. Ваши права (GDPR)</h3>
+    <p>Вы вправе в любой момент получить доступ к своим персональным данным, исправить или удалить их. Для реализации этих прав напишите нам на <a href="mailto:privacy@anymetric.ai">privacy@anymetric.ai</a>.</p>
+    <h3>6. Оператор данных</h3>
+    <p>anymetric, Нови-Сад, Сербия. Контакт: <a href="mailto:privacy@anymetric.ai">privacy@anymetric.ai</a></p>
+  `,
+  terms: `
+    <h2>Условия использования</h2>
+    <div class="legal-date">Дата вступления в силу: 1 апреля 2026</div>
+    <p>Заходя на anymetric.ai или заказывая наши услуги, вы соглашаетесь со следующими условиями.</p>
+    <h3>1. Услуги</h3>
+    <p>anymetric предоставляет услуги консалтинга по ИИ-продуктам, GEO-оптимизации, автоматизации и разработки ИИ-продуктов. Конкретные поставки, сроки и стоимость фиксируются в отдельных проектных соглашениях.</p>
+    <h3>2. Бесплатный аудит</h3>
+    <p>Бесплатный аудит — это диагностика без обязательств. Подача заявки на аудит не образует контракта или каких-либо обязательств для любой из сторон.</p>
+    <h3>3. Гарантия результата</h3>
+    <p>Если предложена гарантия результата, она распространяется на конкретную целевую метрику, согласованную письменно до начала работы. Условия гарантии прописываются в проектном соглашении и не распространяются на предварительные аудиты или бесплатные поставки.</p>
+    <h3>4. Интеллектуальная собственность</h3>
+    <p>Все поставки, исходный код и документация, созданные в рамках платного контракта, передаются клиенту по факту финального платежа, если иное не согласовано письменно.</p>
+    <h3>5. Конфиденциальность</h3>
+    <p>По умолчанию вся информация о клиенте конфиденциальна. Мы не упоминаем публично вашу компанию, проект или результаты без явного письменного согласия.</p>
+    <h3>6. Ограничение ответственности</h3>
+    <p>Наша ответственность ограничена суммой, уплаченной по конкретному контракту. Мы не несём ответственности за косвенные, последующие или предположительные убытки.</p>
+    <h3>7. Применимое право</h3>
+    <p>Настоящие условия регулируются законодательством Республики Сербия. Споры рассматриваются в компетентном суде Нови-Сада.</p>
+    <h3>8. Контакт</h3>
+    <p><a href="mailto:lab@anymetric.ai">lab@anymetric.ai</a></p>
+  `,
+  cookies: `
+    <h2>Политика cookies</h2>
+    <div class="legal-date">Дата вступления в силу: 1 апреля 2026</div>
+    <p>anymetric.ai не использует трекинговые cookies, рекламные cookies или любые сторонние cookies, требующие согласия по GDPR или Директиве ePrivacy.</p>
+    <h3>Аналитика</h3>
+    <p>Мы используем <strong>Plausible Analytics</strong>, который работает без cookies и без сбора персональных данных. Plausible — это cookieless, privacy-first решение для аналитики. Согласие на его использование не требуется.</p>
+    <h3>Отправка форм</h3>
+    <p>Отправка форм обрабатывается через <strong>Supabase</strong>, который сохраняет ваши данные в зашифрованной базе. При отправке формы cookies не устанавливаются. Переданные данные используются исключительно для ответа на ваш запрос.</p>
+    <h3>Записи сессий</h3>
+    <p>Мы используем <strong>Microsoft Clarity</strong>, чтобы понимать, как посетители взаимодействуют с сайтом. Clarity устанавливает функциональные cookies для агрегации данных сессий; идентифицирующая личность информация не собирается. Вы можете отказаться через настройки cookies в браузере.</p>
+    <h3>Контакт</h3>
+    <p>Вопросы о работе с данными: <a href="mailto:privacy@anymetric.ai">privacy@anymetric.ai</a></p>
+  `
+};
+
+function openLegal(doc){
+  document.getElementById('legalContent').innerHTML = legalDocs[doc];
+  document.getElementById('legalOverlay').classList.add('open');
+  document.body.style.overflow='hidden';
+}
+function closeLegal(){
+  document.getElementById('legalOverlay').classList.remove('open');
+  document.body.style.overflow='';
+}
+document.getElementById('legalOverlay').addEventListener('click',function(e){
+  if(e.target===this) closeLegal();
+});
+document.addEventListener('keydown',function(e){
+  if(e.key==='Escape') closeLegal();
+});
+</script>
+<script>
+(function(){
+  var sw=document.getElementById('langSw');
+  if(!sw)return;
+  document.addEventListener('click',function(e){if(!sw.contains(e.target))sw.removeAttribute('open');});
+  sw.querySelectorAll('.ls-opt:not(.ls-active)').forEach(function(a){
+    a.addEventListener('click',function(){localStorage.setItem('am_lang_chosen','manual');});
+  });
+}());
+</script>
+
+</body>
+</html>
