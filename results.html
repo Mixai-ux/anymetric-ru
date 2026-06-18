@@ -107,19 +107,31 @@ nav{position:fixed;top:0;left:0;right:0;z-index:200;background:rgba(13,19,35,0.7
 .nav-in{display:flex;align-items:center;justify-content:space-between;height:64px;padding-right:48px;}
 .nav-logo{display:flex;align-items:center;gap:9px;text-decoration:none;color:var(--text);}
 .nav-wordmark{font-weight:300;font-size:16px;letter-spacing:0.08em;color:var(--text);}
-.nav-back{font-size:11px;font-weight:600;letter-spacing:.15em;text-transform:uppercase;color:var(--text-muted);text-decoration:none;transition:color .2s;}
 .nav-back:hover{color:var(--accent);}
 .nav-back::before{content:'← ';}
-.nav-hamburger{display:none;flex-direction:column;justify-content:center;gap:5px;width:36px;height:36px;background:none;border:none;cursor:pointer;padding:4px;}
-.nav-hamburger span{display:block;height:1.5px;background:var(--text-mid);border-radius:2px;transition:transform .25s,opacity .2s;}
-.nav-hamburger.open span:nth-child(1){transform:translateY(6.5px) rotate(45deg);}
-.nav-hamburger.open span:nth-child(2){opacity:0;}
-.nav-hamburger.open span:nth-child(3){transform:translateY(-6.5px) rotate(-45deg);}
-.nav-drawer{display:none;position:fixed;top:64px;left:0;right:0;background:rgba(13,19,35,0.97);backdrop-filter:blur(24px);border-bottom:1px solid var(--hairline);z-index:199;padding:24px 32px 32px;flex-direction:column;}
-.nav-drawer.open{display:flex;}
-.nav-drawer a{font-size:14px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--text-muted);text-decoration:none;padding:16px 0;border-bottom:1px solid var(--hairline);transition:color .2s;}
-.nav-drawer a:last-child{border-bottom:none;}
-.nav-drawer a:hover{color:var(--accent);}
+/* ═══ SITE-NAV / SIDE DRAWER <!-- AM-BURGER-2026 --> ═══ */
+:root{--accent-glow:rgba(255,185,76,.12);}
+nav.site-nav{display:flex;align-items:center;justify-content:space-between;height:64px;padding:0 48px;}
+.nav-right{display:flex;align-items:center;gap:20px;}
+.burger{display:flex;align-items:center;justify-content:center;min-width:38px;min-height:38px;width:38px;height:38px;background:none;border:none;cursor:pointer;padding:4px;flex-shrink:0;color:var(--text-mid);}
+.burger svg{display:block;pointer-events:none;}
+.burger svg rect{transition:transform .25s ease,opacity .2s ease;transform-box:fill-box;transform-origin:center;}
+.burger.open svg rect:nth-child(1){transform:translateY(5px) rotate(45deg);}
+.burger.open svg rect:nth-child(2){opacity:0;transform:scaleX(0);}
+.burger.open svg rect:nth-child(3){transform:translateY(-5px) rotate(-45deg);}
+.drawer-overlay{position:fixed;inset:0;z-index:300;background:rgba(0,0,0,.5);opacity:0;pointer-events:none;transition:opacity .3s ease;}
+.drawer-overlay.open{opacity:1;pointer-events:auto;}
+.drawer{position:fixed;top:0;right:0;bottom:0;z-index:301;width:280px;background:var(--navy-mid);border-left:1px solid var(--hairline);display:flex;flex-direction:column;transform:translateX(100%);transition:transform .3s ease;padding:80px 0 40px;}
+.drawer.open{transform:translateX(0);}
+.drawer-nav{display:flex;flex-direction:column;flex:1;}
+.drawer-item{font-size:12px;font-weight:600;letter-spacing:.15em;text-transform:uppercase;color:var(--text-muted);text-decoration:none;padding:18px 32px;border-bottom:1px solid var(--hairline);transition:color .2s,background .2s;}
+.drawer-item:hover{color:var(--accent);background:var(--accent-glow);}
+.drawer-cta{padding:32px;}
+.drawer-cta a{display:block;text-align:center;padding:14px 20px;background:var(--accent);color:var(--on-accent);font-weight:700;font-size:11px;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;transition:background .2s;}
+.drawer-cta a:hover{background:var(--accent-dim);}
+@media(max-width:900px){nav.site-nav{padding:0 20px !important;}}
+@media(max-width:480px){nav.site-nav{padding:0 16px !important;}}
+@media(max-width:900px),(hover:none) and (pointer:coarse){.burger{display:flex !important;}}
 
 /* ── HERO ── */
 .page-hero{padding:160px 0 80px;position:relative;overflow:hidden;}
@@ -203,8 +215,6 @@ nav{position:fixed;top:0;left:0;right:0;z-index:200;background:rgba(13,19,35,0.7
   .prov-grid{grid-template-columns:1fr;gap:40px;}
   .method-grid{grid-template-columns:1fr;}
   .cta-form-inline{grid-template-columns:1fr;}
-  .nav-back{display:none;}
-  .nav-hamburger{display:flex;}
   }
 @media(max-width:540px){
   .agg-grid{grid-template-columns:1fr 1fr;}
@@ -250,8 +260,6 @@ html, body { max-width:100%; overflow-x:hidden; }
 
 /* Nav hamburger kicks in earlier for tablet landscape */
 @media (max-width:1024px) {
-  .nav-back { display:none !important; }
-  .nav-hamburger { display:flex !important; }
 }
 
 /* Mobile tightening ≤768px */
@@ -325,25 +333,37 @@ html, body { max-width:100%; overflow-x:hidden; }
 </head>
 <body>
 
-<nav>
-  <div class="nav-in">
-    <a class="nav-logo" href="/">
+<!-- NAV -->
+<nav class="site-nav">
+  <a class="nav-logo" href="/">
       <svg width="28" height="28" viewBox="0 0 100 100" fill="none"><defs><linearGradient id="gld" x1="8" y1="92" x2="92" y2="8" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#6a4000"/><stop offset="30%" stop-color="#b87010"/><stop offset="65%" stop-color="#ffb94c"/><stop offset="100%" stop-color="#fff5cc"/></linearGradient></defs><path d="M92 8 L92 92 L8 92 C 38 92 72 58 92 8 Z" stroke="url(#gld)" stroke-width="1.6" fill="none" stroke-linejoin="round"/><line x1="92" y1="8" x2="8" y2="92" stroke="url(#gld)" stroke-width="0.90" opacity="0.88"/><line x1="92" y1="8" x2="40" y2="92" stroke="url(#gld)" stroke-width="0.62" opacity="0.64"/><path d="M54 92 A38 38 0 0 0 92 54" fill="none" stroke="url(#gld)" stroke-width="0.64" opacity="0.62"/><circle cx="92" cy="8" r="1.8" fill="#fff5cc"/></svg>
       <span class="nav-wordmark">anymetric</span>
     </a>
-    <div style="display:flex;align-items:center;gap:32px;">
-      <a class="nav-back" href="/">Back to Home</a>
-      <a href="/#audit" class="btn-p" style="font-size:11px;padding:12px 22px;" onclick="plausible('CTA Click — Results Nav')">GET FREE AUDIT</a>
-      <details class="lang-sw" id="langSw" role="navigation" aria-label="Language"><summary class="ls-cur" lang="ru">RU ▾</summary><div class="ls-drop"><a href="/results" class="ls-opt" lang="en" hreflang="en">EN</a><a href="/de/results" class="ls-opt" lang="de" hreflang="de">DE</a><a href="#" class="ls-opt ls-active" lang="ru" hreflang="ru">RU</a></div></details>
-      <button class="nav-hamburger" id="navHam" type="button" aria-label="Открыть меню" aria-expanded="false"><span></span><span></span><span></span></button>
-    </div>
+  <div class="nav-right">
+    <details class="lang-sw" id="langSw" role="navigation" aria-label="Language"><summary class="ls-cur" lang="ru">RU ▾</summary><div class="ls-drop"><a href="/results" class="ls-opt" lang="en" hreflang="en">EN</a><a href="/de/results" class="ls-opt" lang="de" hreflang="de">DE</a><a href="#" class="ls-opt ls-active" lang="ru" hreflang="ru">RU</a></div></details>
+    <button class="burger" id="burger" aria-label="Открыть меню" aria-expanded="false">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false"><rect fill="currentColor" x="3" y="6" width="18" height="2" rx="1"/><rect fill="currentColor" x="3" y="11" width="18" height="2" rx="1"/><rect fill="currentColor" x="3" y="16" width="18" height="2" rx="1"/></svg>
+    </button>
   </div>
 </nav>
-<div class="nav-drawer" id="navDrawer">
-  <a href="/" onclick="closeDrawer()">Главная</a>
-  <a href="/#services" onclick="closeDrawer()">Услуги</a>
-  <a href="/#audit" onclick="closeDrawer()">Бесплатный аудит</a>
-</div>
+
+<!-- DRAWER OVERLAY -->
+<div class="drawer-overlay" id="drawerOverlay"></div>
+
+<!-- DRAWER -->
+<aside class="drawer" id="drawer" aria-hidden="true">
+  <nav class="drawer-nav">
+    <a class="drawer-item" href="/">Главная</a>
+    <a class="drawer-item" href="/#services">Услуги</a>
+    <a class="drawer-item" href="/results">Результаты</a>
+    <a class="drawer-item" href="/geo-aeo-optimization">GEO / AEO</a>
+    <a class="drawer-item" href="/on-premise-ai">On-Premise ИИ</a>
+    <a class="drawer-item" href="/white-label">White Label</a>
+  </nav>
+  <div class="drawer-cta">
+    <a href="/#audit">БЕСПЛАТНЫЙ АУДИТ →</a>
+  </div>
+</aside>
 
 <!-- HERO -->
 <section class="page-hero">
@@ -677,20 +697,17 @@ document.querySelectorAll('.faq-q').forEach(q=>{
     if(!o)i.classList.add('open');
   });
 });
-const ham=document.getElementById('navHam');
-const drawer=document.getElementById('navDrawer');
-ham.addEventListener('click',()=>{
-  const open=drawer.classList.toggle('open');
-  ham.classList.toggle('open',open);
-  ham.setAttribute('aria-expanded', open);
-  document.body.style.overflow=open?'hidden':'';
-});
-function closeDrawer(){
-  drawer.classList.remove('open');ham.classList.remove('open');
-  ham.setAttribute('aria-expanded','false');
-  document.body.style.overflow='';
-}
+// Burger / side drawer
+const burger=document.getElementById('burger');
+const drawer=document.getElementById('drawer');
+const overlay=document.getElementById('drawerOverlay');
+function openDrawer(){drawer.classList.add('open');overlay.classList.add('open');burger.classList.add('open');burger.setAttribute('aria-expanded','true');drawer.setAttribute('aria-hidden','false');document.body.style.overflow='hidden';}
+function closeDrawer(){drawer.classList.remove('open');overlay.classList.remove('open');burger.classList.remove('open');burger.setAttribute('aria-expanded','false');drawer.setAttribute('aria-hidden','true');document.body.style.overflow='';}
+burger.addEventListener('click',()=>drawer.classList.contains('open')?closeDrawer():openDrawer());
+overlay.addEventListener('click',closeDrawer);
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeDrawer();});
 window.addEventListener('scroll',()=>{if(drawer.classList.contains('open'))closeDrawer();},{passive:true});
+document.querySelectorAll('.drawer-item').forEach(a=>{a.addEventListener('click',closeDrawer);});
 </script>
 <script>
 /* ════════════════════════════════════════════════

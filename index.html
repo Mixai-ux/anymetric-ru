@@ -261,39 +261,29 @@ textarea { resize:vertical; min-height:88px; }
 select option { background:var(--navy-card); color:var(--text); }
 .fl { font-size:9px; font-weight:700; letter-spacing:0.22em; text-transform:uppercase; color:var(--accent); display:block; margin-bottom:6px; }
 
-/* ══════════════════════════════════════════
-   MOBILE NAV
-   ══════════════════════════════════════════ */
-.nav-hamburger {
-  display:none; flex-direction:column; justify-content:center;
-  gap:5px; width:36px; height:36px; background:none; border:none;
-  cursor:pointer; padding:4px; margin-left:8px; flex-shrink:0;
-}
-.nav-hamburger span {
-  display:block; height:1.5px; background:var(--text-mid);
-  border-radius:2px; transition:transform .25s ease, opacity .2s ease;
-}
-.nav-hamburger.open span:nth-child(1) { transform:translateY(6.5px) rotate(45deg); }
-.nav-hamburger.open span:nth-child(2) { opacity:0; transform:scaleX(0); }
-.nav-hamburger.open span:nth-child(3) { transform:translateY(-6.5px) rotate(-45deg); }
-
-.nav-drawer {
-  display:none; position:fixed; top:64px; left:0; right:0;
-  background:rgba(13,19,35,0.97); backdrop-filter:blur(24px);
-  -webkit-backdrop-filter:blur(24px);
-  border-bottom:1px solid var(--hairline); z-index:199;
-  padding:24px 32px 32px; flex-direction:column; gap:0;
-}
-.nav-drawer.open { display:flex; }
-.nav-drawer a {
-  font-size:14px; font-weight:600; letter-spacing:0.12em;
-  text-transform:uppercase; color:var(--text-muted);
-  text-decoration:none; padding:16px 0;
-  border-bottom:1px solid var(--hairline); transition:color .2s;
-}
-.nav-drawer a:last-of-type { border-bottom:none; }
-.nav-drawer a:hover { color:var(--accent); }
-.nav-drawer .drawer-cta { margin-top:24px; text-align:center; font-size:12px; }
+/* ═══ SITE-NAV / SIDE DRAWER <!-- AM-BURGER-2026 --> ═══ */
+:root{--accent-glow:rgba(255,185,76,.12);}
+nav.site-nav{display:flex;align-items:center;justify-content:space-between;height:64px;padding:0 48px;}
+.nav-right{display:flex;align-items:center;gap:20px;}
+.burger{display:flex;align-items:center;justify-content:center;min-width:38px;min-height:38px;width:38px;height:38px;background:none;border:none;cursor:pointer;padding:4px;flex-shrink:0;color:var(--text-mid);}
+.burger svg{display:block;pointer-events:none;}
+.burger svg rect{transition:transform .25s ease,opacity .2s ease;transform-box:fill-box;transform-origin:center;}
+.burger.open svg rect:nth-child(1){transform:translateY(5px) rotate(45deg);}
+.burger.open svg rect:nth-child(2){opacity:0;transform:scaleX(0);}
+.burger.open svg rect:nth-child(3){transform:translateY(-5px) rotate(-45deg);}
+.drawer-overlay{position:fixed;inset:0;z-index:300;background:rgba(0,0,0,.5);opacity:0;pointer-events:none;transition:opacity .3s ease;}
+.drawer-overlay.open{opacity:1;pointer-events:auto;}
+.drawer{position:fixed;top:0;right:0;bottom:0;z-index:301;width:280px;background:var(--navy-mid);border-left:1px solid var(--hairline);display:flex;flex-direction:column;transform:translateX(100%);transition:transform .3s ease;padding:80px 0 40px;}
+.drawer.open{transform:translateX(0);}
+.drawer-nav{display:flex;flex-direction:column;flex:1;}
+.drawer-item{font-size:12px;font-weight:600;letter-spacing:.15em;text-transform:uppercase;color:var(--text-muted);text-decoration:none;padding:18px 32px;border-bottom:1px solid var(--hairline);transition:color .2s,background .2s;}
+.drawer-item:hover{color:var(--accent);background:var(--accent-glow);}
+.drawer-cta{padding:32px;}
+.drawer-cta a{display:block;text-align:center;padding:14px 20px;background:var(--accent);color:var(--on-accent);font-weight:700;font-size:11px;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;transition:background .2s;}
+.drawer-cta a:hover{background:var(--accent-dim);}
+@media(max-width:900px){nav.site-nav{padding:0 20px !important;}}
+@media(max-width:480px){nav.site-nav{padding:0 16px !important;}}
+@media(max-width:900px),(hover:none) and (pointer:coarse){.burger{display:flex !important;}}
 
 /* ── Section rhythm ── */
 section { padding:100px 0; position:relative; overflow:clip; }
@@ -597,10 +587,6 @@ html, body { max-width:100%; overflow-x:hidden; }
 
 /* --- TABLET & BELOW (≤1024px): nav collapses to hamburger, wide grids start breaking --- */
 @media (max-width:1024px) {
-  .nav-ul { display:none !important; }
-  .lang  { display:none !important; }
-  .nav-r > .btn-p { display:none !important; }
-  .nav-hamburger { display:flex !important; }
   .container { padding:0 32px; }
 
   .proto-grid { grid-template-columns:repeat(2,1fr); }
@@ -755,9 +741,8 @@ html, body { max-width:100%; overflow-x:hidden; }
 </div>
 
 <!-- NAV -->
-<nav>
-  <div class="nav-in">
-    <a class="nav-logo" href="/">
+<nav class="site-nav">
+  <a class="nav-logo" href="/">
       <!--
         Logo faithful reconstruction:
         - Apex: top-right (92,8)
@@ -815,30 +800,31 @@ html, body { max-width:100%; overflow-x:hidden; }
       </svg>
       <span class="nav-wordmark">anymetric</span>
     </a>
-    <ul class="nav-ul">
-      <li><a href="#results">Результаты</a></li>
-      <li><a href="#services">Услуги</a></li>
-      <li><a href="#protocol">Подход</a></li>
-      <li><a href="#playbook">Playbook</a></li>
-    </ul>
-    <div class="nav-r">
-      <details class="lang-sw" id="langSw" role="navigation" aria-label="Language"><summary class="ls-cur" lang="ru">RU ▾</summary><div class="ls-drop"><a href="/" class="ls-opt" lang="en" hreflang="en">EN</a><a href="/de/" class="ls-opt" lang="de" hreflang="de">DE</a><a href="#" class="ls-opt ls-active" lang="ru" hreflang="ru">RU</a></div></details>
-      <a href="#audit" class="btn-p" style="font-size:11px;padding:12px 22px;">Бесплатный аудит</a>
-      <button class="nav-hamburger" id="navHam" type="button" aria-label="Открыть меню" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
+  <div class="nav-right">
+    <details class="lang-sw" id="langSw" role="navigation" aria-label="Language"><summary class="ls-cur" lang="ru">RU ▾</summary><div class="ls-drop"><a href="/" class="ls-opt" lang="en" hreflang="en">EN</a><a href="/de/" class="ls-opt" lang="de" hreflang="de">DE</a><a href="#" class="ls-opt ls-active" lang="ru" hreflang="ru">RU</a></div></details>
+    <button class="burger" id="burger" aria-label="Открыть меню" aria-expanded="false">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false"><rect fill="currentColor" x="3" y="6" width="18" height="2" rx="1"/><rect fill="currentColor" x="3" y="11" width="18" height="2" rx="1"/><rect fill="currentColor" x="3" y="16" width="18" height="2" rx="1"/></svg>
+    </button>
   </div>
 </nav>
 
-<!-- Mobile nav drawer -->
-<div class="nav-drawer" id="navDrawer" role="navigation" aria-label="Мобильная навигация">
-  <a href="#results" onclick="closeDrawer()">Результаты</a>
-  <a href="#services" onclick="closeDrawer()">Услуги</a>
-  <a href="#protocol" onclick="closeDrawer()">Подход</a>
-  <a href="#playbook" onclick="closeDrawer()">Playbook</a>
-  <a href="#audit" class="btn-p drawer-cta" onclick="closeDrawer()">Бесплатный аудит →</a>
-</div>
+<!-- DRAWER OVERLAY -->
+<div class="drawer-overlay" id="drawerOverlay"></div>
+
+<!-- DRAWER -->
+<aside class="drawer" id="drawer" aria-hidden="true">
+  <nav class="drawer-nav">
+    <a class="drawer-item" href="/">Главная</a>
+    <a class="drawer-item" href="/#services">Услуги</a>
+    <a class="drawer-item" href="/results">Результаты</a>
+    <a class="drawer-item" href="/geo-aeo-optimization">GEO / AEO</a>
+    <a class="drawer-item" href="/on-premise-ai">On-Premise ИИ</a>
+    <a class="drawer-item" href="/white-label">White Label</a>
+  </nav>
+  <div class="drawer-cta">
+    <a href="/#audit">БЕСПЛАТНЫЙ АУДИТ →</a>
+  </div>
+</aside>
 
 <!-- ════════════════════════════════════════
      B01: HERO
@@ -1277,23 +1263,17 @@ document.querySelectorAll('.faq-q').forEach(q=>{
   q.addEventListener('click',()=>{const i=q.parentElement,o=i.classList.contains('open');document.querySelectorAll('.faq-item').forEach(x=>x.classList.remove('open'));if(!o)i.classList.add('open');});
 });
 
-// Mobile nav hamburger
-const ham=document.getElementById('navHam');
-const drawer=document.getElementById('navDrawer');
-ham.addEventListener('click',()=>{
-  const isOpen=drawer.classList.toggle('open');
-  ham.classList.toggle('open',isOpen);
-  ham.setAttribute('aria-expanded',isOpen);
-  document.body.style.overflow=isOpen?'hidden':'';
-});
-function closeDrawer(){
-  drawer.classList.remove('open');
-  ham.classList.remove('open');
-  ham.setAttribute('aria-expanded','false');
-  document.body.style.overflow='';
-}
-// Close drawer on scroll
+// Burger / side drawer
+const burger=document.getElementById('burger');
+const drawer=document.getElementById('drawer');
+const overlay=document.getElementById('drawerOverlay');
+function openDrawer(){drawer.classList.add('open');overlay.classList.add('open');burger.classList.add('open');burger.setAttribute('aria-expanded','true');drawer.setAttribute('aria-hidden','false');document.body.style.overflow='hidden';}
+function closeDrawer(){drawer.classList.remove('open');overlay.classList.remove('open');burger.classList.remove('open');burger.setAttribute('aria-expanded','false');drawer.setAttribute('aria-hidden','true');document.body.style.overflow='';}
+burger.addEventListener('click',()=>drawer.classList.contains('open')?closeDrawer():openDrawer());
+overlay.addEventListener('click',closeDrawer);
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeDrawer();});
 window.addEventListener('scroll',()=>{if(drawer.classList.contains('open'))closeDrawer();},{passive:true});
+document.querySelectorAll('.drawer-item').forEach(a=>{a.addEventListener('click',closeDrawer);});
 
 // Plausible CTA click tracking (nav + hero buttons)
 document.querySelectorAll('a[href="#audit"]').forEach(el=>{
